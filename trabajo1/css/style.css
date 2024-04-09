@@ -7,18 +7,74 @@
 }
 
 :root{
-    
+    --staat-font: "Staatliches", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+    --fondo-degradado: linear-gradient(90deg, lightblue 0%, black 100%);
+    --negro90: rgba(33, 33, 33);
 }
 
 .staatliches-regular {
-    font-family: "Staatliches", sans-serif;
+    font-family: var(--staat-font);
     font-weight: 400;
     font-style: normal;
+
   }
 
-
 .manrope {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--manrope-font);
   font-optical-sizing: auto;
+
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+.contenedor{
+  height: 100%;
+  width: 100%;
+  background: var(--fondo-degradado);
+  display: grid;
+  place-items: center;
+}
+
+.sombra{
+  box-shadow: 20px 20px 15px 15px brown;
+  /*BOX-SHADOW: X:20px hacia la derecha o -20px hacia la izquierda  Y:20px hacia abajo  
+    BLUR:se difumina la sombra  Z:tamaño de la sombra respecto del elemento original COLOR  SOMBRA EXTERIOR */
+  /*BOX-SHADOW: INSET:genera sombra adentro X Y BLUR Z COLOR    SOMBRA INTERIOR */
+}
+
+.tarjeta{
+  height: 550px;
+  width: 300px;
+  background-color: white;
+  border-radius: 14px ;
+  /*BUSCAR EN W3SCHOOLS propiedades de BORDER RADIUS*/
+  
+  & .encabezado{
+    background-color: red;
+    height: 60px;
+    width: 100%;
+  }
+
+  & .producto{
+    background-color: blue;
+    height: 260px;
+    width: 100%;
+  }
+
+  & .descrip{
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+  }
+
+  & .botonera{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+  }
 
 }
