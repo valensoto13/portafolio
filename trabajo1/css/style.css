@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     padding: 0;
@@ -13,68 +14,133 @@
     --negro90: rgba(33, 33, 33);
 }
 
-.staatliches-regular {
-    font-family: var(--staat-font);
-    font-weight: 400;
-    font-style: normal;
 
-  }
-
-.manrope {
-  font-family: var(--manrope-font);
-  font-optical-sizing: auto;
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--fondo-degradado);
+    font-family: "Poppins" , sans-serif;
 }
 
-body{
-  height: 100vh;
+.card {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 15px 45px rgb(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    width: 600px;
+}
+
+.card .imgBox{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover .imgBox{
+    transform: rotate(-35deg);
+}
+
+.card .imgBox img{
+    width: 85%;
+}
+
+.card .details {
+  position: relative;
+  min-width: 300px;
+  background-color: #4ba9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-}
-
-.contenedor{
   height: 100%;
-  width: 100%;
-  background: var(--fondo-degradado);
-  display: grid;
-  place-items: center;
+  padding: 20px;
+  color: #fff;
 }
 
-.sombra{
-  box-shadow: 20px 20px 15px 15px brown;
-  /*BOX-SHADOW: X:20px hacia la derecha o -20px hacia la izquierda  Y:20px hacia abajo  
-    BLUR:se difumina la sombra  Z:tamaño de la sombra respecto del elemento original COLOR  SOMBRA EXTERIOR */
-  /*BOX-SHADOW: INSET:genera sombra adentro X Y BLUR Z COLOR    SOMBRA INTERIOR */
+
+.card .details::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
 }
 
-.tarjeta{
-  height: 550px;
-  width: 300px;
-  background-color: white;
-  border-radius: 14px ;
-  /*BUSCAR EN W3SCHOOLS propiedades de BORDER RADIUS*/
-  
-  & .encabezado{
-    background-color: red;
-    height: 60px;
-    width: 100%;
+.card .details .boton{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
   }
 
-  & .producto{
-    background-color: blue;
-    height: 260px;
-    width: 100%;
-  }
+.card .details title small{
+    font-weight: 200;
+    font-size: 0.8em;
+}
 
-  & .descrip{
-    background-color: aqua;
-    height: 200px;
-    width: 100%;
-  }
+.card .details h4{
+    font-size: 0.9em;
+}
 
-  & .botonera{
-    background-color: white;
-    height: 50px;
-    width: 100%;
-  }
+.card .details .description p{
+    font-size: 0.9em;
+    font-weight: 200;
+}
 
+.card .details .size ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card .details .size ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border: solid 1px #fff;
+    padding: 0.6em;
+}
+
+.card .details .size ul li:hover{
+    background-color: #fff;
+    color: #4ba9e9;
+}
+
+.card .details .buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .details .buy .price{
+    font-size: 1.5em;
+}
+
+.card .details .buy .btn{
+    background-color: #fff;
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+}
+
+.card .details .buy .btn a{
+    text-decoration: none;
+    color: #4ba9e9;
 }
