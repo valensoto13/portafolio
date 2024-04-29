@@ -6,5 +6,336 @@
 
 body{
     height: 100vh;
-    background-color: aqua;
+    margin-left: 30%;
 }
+
+/* .contenedor{
+    background-color: brown;
+    /* height: 100%;
+    width: 70%; */
+    /* margin: auto;
+    width: 80%;
+    min-height: 190vh; */
+    /*overflow-y: scroll; PERMITE QUE AQUELLOS ELEMENTOS QUE DESBORDEN
+    DEL CONTENEDOR PUEDAN SER VISUALIZADOS CON LA BARRA DE 
+    DESPLAZAMIENTO */
+    /* background-color: #361e12 ; */
+    /* padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    order: 0;
+}
+
+.carta{
+    width: 80%;
+    height: 70px;
+    background-color:blueviolet;  */
+
+.contenedor{
+    border: solid 9px black;
+    /* /* height: 100%;
+    width: 70%; */
+    /* margin: auto; */
+    width: 40%;
+    min-height: 90vh;
+    border-radius: 30px;
+    
+}
+
+header{
+    height: 50%;
+    width: 100%;
+    padding: 5px;
+    margin-left: -1%;     
+
+        img{
+            height: 158px;
+            width: 104%;
+            margin-left: -1%;
+            margin-top: -5px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .linea{
+            gap: 20px;
+            margin-top: -2%;
+            height: 8px;
+            width: 99%;
+            margin-left: 2px;
+            background-color:white;
+        }
+}
+
+main{
+    height: 325px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 0%;
+    margin-top: -5px;
+    background-color: rgb(202, 124, 189);
+    
+    /* h3{
+        font-size: 30px;
+    } */
+
+    .info{
+        img{
+            margin-top: -80px;
+            margin-left: 35%;
+            width: 120px;
+            height: 110px;
+            margin-bottom: 5px;
+            border-radius: 100%;
+        }
+
+        .alumno{
+            margin-top: 5%;
+            margin-left: 20%;
+            font-size: 15px;
+
+            p{
+                font-size: 13px;
+            }
+
+            .profesion{
+                margin-top: 10%;
+                font-size: 15px;
+            }
+
+            .año{
+                margin-top: 5%;
+                position: absolute;
+                font-size: 15px;
+                left: 34%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20%;
+
+                .product{
+                    /* /* left: 5%; */
+                    text-align: center;
+                    /* padding: 10px; */
+                }
+
+            }
+        }
+    }
+}
+
+footer{  
+    height: 100px;
+        img{
+            height: 95px;
+            width: 100%;
+            margin-left: 0%;
+            margin-top: -1px;  
+            border-radius: 0 0 15px 15px;
+        }
+
+        .linea{
+            gap: 20px;
+            margin-top: -2%;
+            height: 8px;
+            width: 100%;
+            background-color:white;
+        }
+
+        .btn{
+            position: absolute;
+            align-items: center;
+            left: 39%;
+            background-color:rgb(202, 124, 189);
+            color: white;
+            bottom: 80px;
+            font-size: 15px;
+            width: 10%;
+            height: 30px;
+        }
+}
+
+
+    /* .portada{
+        height: 70%;
+        width: 100%;
+        background-color: brown;
+        position: relative;
+
+        .imagen-resto{
+            height: 100%;
+            width: 100%;
+        
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .saludo{
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            height: 80px;
+            width: 300px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .buscador {
+            position: absolute;
+            height: 35px;
+            width: 45%;
+            left: 20%;
+            background-color: white;
+            bottom: -20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+            
+
+            .ubicacion{
+                height: 35px;
+                width: 35px;
+                background-color: greenyellow;
+            }
+
+            .escribir{
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                height: 35px;
+                left: 9%;
+            }
+
+            .buscar{
+                width: 10%;
+                height: 35px;
+            }
+
+            /* input (usar corchete)yye=submit */
+                
+        /* }      
+        
+        
+        
+        .comidas{
+            position: absolute;
+            font-size: 35px;
+            left: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 45%;
+
+            .product{
+                left: 20%;
+                text-align: center;
+                padding: 10px;
+            }
+            
+            .product h3{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                text-transform: uppercase;
+                
+            }
+        }
+    }
+
+        .categorias{
+            height: 30%;
+            width: 100%;
+        }  */
+
+
+
+
+
+
+    /* .resultados{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .resto{
+            justify-content: space-between;
+            height: 200px;
+            width: 100%;
+            background-color: blue;
+            color: black;
+
+
+            .imagen-resto{
+                width: 50%;
+                height: 170px;
+                background-color: blue;
+                margin-left: 1%;
+                margin-top: -140px;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            h3{
+                width: 40%;
+                font-size: 20px;
+                background-color: violet;
+                margin-left: 55%;
+                margin-top: 30px;
+            }
+
+            p{
+                background-color: chocolate;
+                width: 40%;
+                margin-left: 55%;
+            }
+
+            .estrellas{
+                width: 30%;
+                font-size: 17px;
+                background-color: chartreuse;
+                margin-left: 55%;
+            }
+        }
+
+        
+
+    } */
+
+
+
+
+
+/* 
+@media (orientation: landscape){
+
+    header{
+        .portada{
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            .comidas{
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+    }
+
+    main {
+        .resultados{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .resto{
+                /* flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 50%; */
+                /* flex: 0 0 calc(50% - 10px);
+                background-color: yellow;
+            }
+        }
+    }
+} */
