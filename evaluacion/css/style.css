@@ -152,187 +152,14 @@ footer{
             height: 30px;
             padding: 0.5em 0.9em;
             text-transform: uppercase;
-  
-            
         }
 
         .btn a{
             text-decoration: none;
             color: white;
         }
-/* 
-        .card .details .buy .btn{
-            background-color: #fff;
-            padding: 0.5em 0.8em;
-            text-transform: uppercase;
-        }
-        
-        .card .details .buy .btn a{
-            text-decoration: none;
-            color: #4ba9e9;
-        } */
-
-
-}
-
-
-    /* .portada{
-        height: 70%;
-        width: 100%;
-        background-color: brown;
-        position: relative;
-
-        .imagen-resto{
-            height: 100%;
-            width: 100%;
-        
-        }
-
-        img{
-            height: 100%;
-            width: 100%;
-        }
-
-        .saludo{
-            position: absolute;
-            bottom: 40px;
-            left: 60px;
-            height: 80px;
-            width: 300px;
-            color: white;
-            font-size: 20px;
-        }
-
-        .buscador {
-            position: absolute;
-            height: 35px;
-            width: 45%;
-            left: 20%;
-            background-color: white;
-            bottom: -20px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 25px;
-            
-
-            .ubicacion{
-                height: 35px;
-                width: 35px;
-                background-color: greenyellow;
-            }
-
-            .escribir{
-                position: absolute;
-                display: flex;
-                justify-content: space-between;
-                width: 40%;
-                height: 35px;
-                left: 9%;
-            }
-
-            .buscar{
-                width: 10%;
-                height: 35px;
-            }
-
-            /* input (usar corchete)yye=submit */
-                
-        /* }      
-        
-        
-        
-        .comidas{
-            position: absolute;
-            font-size: 35px;
-            left: 20%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 45%;
-
-            .product{
-                left: 20%;
-                text-align: center;
-                padding: 10px;
-            }
-            
-            .product h3{
-                font-size: 20px;
-                font-family: 'Times New Roman', Times, serif;
-                text-transform: uppercase;
-                
-            }
-        }
     }
 
-        .categorias{
-            height: 30%;
-            width: 100%;
-        }  */
-
-
-
-
-
-
-    /* .resultados{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        .resto{
-            justify-content: space-between;
-            height: 200px;
-            width: 100%;
-            background-color: blue;
-            color: black;
-
-
-            .imagen-resto{
-                width: 50%;
-                height: 170px;
-                background-color: blue;
-                margin-left: 1%;
-                margin-top: -140px;
-            }
-
-            img{
-                width: 100%;
-                height: 100%;
-            }
-
-            h3{
-                width: 40%;
-                font-size: 20px;
-                background-color: violet;
-                margin-left: 55%;
-                margin-top: 30px;
-            }
-
-            p{
-                background-color: chocolate;
-                width: 40%;
-                margin-left: 55%;
-            }
-
-            .estrellas{
-                width: 30%;
-                font-size: 17px;
-                background-color: chartreuse;
-                margin-left: 55%;
-            }
-        }
-
-        
-
-    } */
-
-
-
-
-
-/* 
 @media (orientation: landscape){
 
     header{
@@ -347,17 +174,32 @@ footer{
     }
 
     main {
-        .resultados{
+        .info{
             flex-direction: row;
             flex-wrap: wrap;
 
-            .resto{
-                /* flex-grow: 0;
+            .alumno .profesion .año{
+                flex-grow: 0;
                 flex-shrink: 0;
-                flex-basis: 50%; */
-                /* flex: 0 0 calc(50% - 10px);
+                flex-basis: 50%; 
+                flex: 0 0 calc(50% - 10px);
                 background-color: yellow;
             }
         }
     }
-} */
+
+    footer{
+        .section{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .linea .fondo .btn{
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 50%; 
+                flex: 0 0 calc(50% - 10px);
+                background-color: yellow;
+            }
+        }
+    }
+}
