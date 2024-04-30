@@ -190,7 +190,7 @@ footer{
             flex-direction: row;
             flex-wrap: wrap;
 
-            .alumno .profesion .año{
+            .alumno .foto-alum .profesion .año .product{
                 flex-grow: 0;
                 flex-shrink: 0;
                 flex-basis: 50%; 
@@ -205,7 +205,7 @@ footer{
             flex-direction: row;
             flex-wrap: wrap;
 
-            .linea .fondo .btn{
+            .linea .fondo .btn .a{
                 flex-grow: 0;
                 flex-shrink: 0;
                 flex-basis: 50%; 
