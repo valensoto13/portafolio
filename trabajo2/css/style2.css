@@ -232,19 +232,19 @@ main{
             }
 
             h3{
-                width: 40%;
+                width: 50%;
                 height: 50px;
                 font-size: 30px;
                 background-color: violet;
                 padding: 10px;
-                margin-left: 58%;
+                margin-left: 45%;
             }
 
             p{
                 background-color: chocolate;
                 width: 40%;
                 font-size: 20px;
-                margin-left: 58%;
+                margin-left: 45%;
             }
 
             .estrellas{
