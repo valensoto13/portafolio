@@ -6,28 +6,19 @@
 
 body{
     height: 100vh;
-    
 }
 
-.portada{
+.contenedor{
     background-color: brown;
-    /* height: 100%;
-    width: 70%; */
-    /* margin: auto; */
-    width: 100%;
-    min-height: 140vh;
-    /*overflow-y: scroll; PERMITE QUE AQUELLOS ELEMENTOS QUE DESBORDEN
-    DEL CONTENEDOR PUEDAN SER VISUALIZADOS CON LA BARRA DE 
-    DESPLAZAMIENTO */
-    /* background-color: #361e12 ; */
-    /* padding: 20px; */
+    /* width: 100%;
+    min-height: 140vh;  */
     font-family: 'Times New Roman', Times, serif;
-    /* order: 0; */
 }
+
 
 header{
     background-color: chartreuse;
-    height: 80%;
+    height: 100%;
     width: 100%;
 
     .portada{
@@ -39,11 +30,12 @@ header{
             height: 350px;
             width: 100%;
             top: -50px;
+            background-color: blueviolet;
         
         }
 
         img{
-            height: 80%;
+            height: 100%;
             width: 100%;
 
         }
@@ -51,11 +43,13 @@ header{
         .saludo{
             position: absolute;
             bottom: 100px;
-            left: 60px;
+            margin-left: 15%;
             height: 80px;
             width: 300px;
             color: white;
             font-size: 20px;
+            border: 1px black;
+            border-color: black;
         }
 
         .buscador {
@@ -111,7 +105,7 @@ header{
             height: 30%;
             width: 100%;
             padding: 3%;
-            padding-top: 20px;
+            padding-top: -80px;
             display: flex;
             gap: 20px;
 
@@ -151,6 +145,7 @@ main{
     
     h3{
         font-size: 30px;
+        margin-left: 5%;
     }
 
     .resultados{
