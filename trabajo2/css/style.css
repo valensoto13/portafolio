@@ -6,6 +6,23 @@
 
 body{
     height: 100vh;
+    
+}
+
+.portada{
+    background-color: brown;
+    /* height: 100%;
+    width: 70%; */
+    /* margin: auto; */
+    width: 100%;
+    min-height: 140vh;
+    /*overflow-y: scroll; PERMITE QUE AQUELLOS ELEMENTOS QUE DESBORDEN
+    DEL CONTENEDOR PUEDAN SER VISUALIZADOS CON LA BARRA DE 
+    DESPLAZAMIENTO */
+    /* background-color: #361e12 ; */
+    /* padding: 20px; */
+    font-family: 'Times New Roman', Times, serif;
+    /* order: 0; */
 }
 
 header{
