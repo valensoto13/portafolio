@@ -25,6 +25,10 @@ header{
         color: black;
         /* padding: 10px; */
         margin-left: 3%;
+
+        a{
+            color: black;
+        }
     }
 
     .logo{

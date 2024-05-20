@@ -28,7 +28,7 @@ header{
 
         .imagen-resto{
             height: 350px;
-            width: 100%;
+            width: 101%;
             top: -50px;
             background-color: blueviolet;
         
@@ -161,7 +161,6 @@ main{
             background-color: #1e552c;
             color: black;
             position: relative;
-
 
             .imagen-resto{
                 width: 50%;
