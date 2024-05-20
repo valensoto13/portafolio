@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.portada{
+    background-color: brown;
+    /* height: 100%;
+    width: 70%; */
+    /* margin: auto; */
+    width: 100%;
+    min-height: 140vh;
+    /*overflow-y: scroll; PERMITE QUE AQUELLOS ELEMENTOS QUE DESBORDEN
+    DEL CONTENEDOR PUEDAN SER VISUALIZADOS CON LA BARRA DE 
+    DESPLAZAMIENTO */
+    /* background-color: #361e12 ; */
+    /* padding: 20px; */
+    font-family: 'Times New Roman', Times, serif;
+    /* order: 0; */
+}
+
+header{
+    height: 400px;
+    width: 100%;
+    background-color: violet;
+
+    /* .img-resto{
+        width: 100%;
+        background-color: blue;
+    } */
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+main{
+
+    h3{
+        height: 20px;
+        width: 70%;
+        color: black;
+        font-size: 30px;
+        padding: 20px;
+        margin-left: 40px;
+    }
+
+    .puntu_resto{
+        position: absolute;
+        height: 40px;
+        width: 10%;
+        background-color: rgb(83, 177, 146);
+        font-size: 22px;
+        display: grid;
+        place-items: center;
+        left: 80%;
+        top: 410px;
+        border-radius: 10px 0;
+        box-shadow: 0 0 15px -2px  black;
+    }
+
+    .descri{
+        height: 30px;
+        width: 80%;
+        /* background-color: blue; */
+        margin-top: 100px;
+
+        p{
+            margin: 60px;
+        }
+    }
+
+    p{
+        height: 30px;
+        width: 80%;
+        margin-top: 130px;
+        margin-left: 60px;
+    }
+
+    .linea{
+        height: 1px;
+        background-color: grey;
+        width: 95%;
+        margin-left: 3%;
+    }
+
+    .carrito{
+        margin-top: 40px;
+        margin-left: 3%;
+
+
+        .agregar{
+            background-color: rgb(37, 134, 75);
+            width: 15%;
+            height: 35px;
+            margin-left: 1%;
+
+            .fa-minus{
+                margin-top: 10px;
+                margin-left: 15%;
+            }
+
+            .text{
+                margin-left: 5%;
+            }
+
+            .fa-plus{
+                margin-left: 30%;
+                margin-top: -100px;
+
+            }
+        }
+
+        .btn-success{
+            margin-left: 18%;
+            width: 80%;
+            margin-top: -58px;
+        }
+    }
+
+}
