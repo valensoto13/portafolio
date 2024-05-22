@@ -69,29 +69,28 @@ main{
         height: 100%;
         width: 100%;
         margin-left: 1%;
+        /* display: flex;
+        background-color: aqua; */
 
             .resultados{
                 gap: 50px;
                 width: 100%;
                 height: 100%;
+                display: flex;
+                /* justify-content: space-between; */
     
                 .resto{
-                    /* justify-content:space-evenly; */
-                    /* height: 200px;
-                    width: 100%; */
+
                     height: 220px;
-                    width: 99%;
+                    width: 90%;
                     position: relative;
                     background-color: #123d20;
                     color: black;
-                    /* left: 1%; */
+                    left: 5%;
     
-
                     .imagen-resto{
                         width: 40%;
                         height: 220px;
-                        margin-top: 10px;
-                        background-color: aqua
                     }
                 
                     img{
