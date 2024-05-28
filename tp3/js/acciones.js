@@ -68,6 +68,9 @@ function aumentar(){
         resta.style.cursor = "pointer"
         counter = counter + 1
         cont.innerText = counter
+    }else{
+        suma.style.color = "red"
+        suma.style.cursor = "not-allowed"
     }
 }
 
