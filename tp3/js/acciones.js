@@ -64,8 +64,8 @@ cont.innerText = counter
 
 function aumentar(){
     if(counter < 10){
-        resta.style.color = "black"
-        resta.style.cursor = "pointer"
+        suma.style.color = "black"
+        suma.style.cursor = "pointer"
         counter = counter + 1
         cont.innerText = counter
     }else{
