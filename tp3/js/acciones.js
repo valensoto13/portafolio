@@ -63,16 +63,24 @@ let counter = 1
 cont.innerText = counter
 
 function aumentar(){
-
-    counter = counter + 1
-    cont.innerText = counter
+    if(counter < 10){
+        resta.style.color = "black"
+        resta.style.cursor = "pointer"
+        counter = counter + 1
+        cont.innerText = counter
+    }
 }
 
 
 function disminuir(){
+    if(counter > 1){
+        counter = counter - 1
+        cont.innerText = counter
+    }else{
+        resta.style.color = "red"
+        resta.style.cursor = "not-allowed"
+    }
 
-    counter = counter - 1
-    cont.innerText = counter
 }
 
 console.log(counter)
