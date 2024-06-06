@@ -12,7 +12,7 @@ fetch('js/restaurantes.json')
          <a href="restaurante.html" class="resto"></a>
          <div class="puntu_resto">${data[i].puntuacion}</div>
          <div class="imagen-resto">
-             ${data[i].avatar.src}
+             <img src="${data[i].avatar.src}" alt="">
          </div>
          <h3><a href="restaurante.html"> ${data[i].name}</a></h3>
          <br>
