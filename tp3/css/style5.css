@@ -218,8 +218,9 @@ main{
             .estrellas{
                 width: 30%;
                 font-size: 17px;
-
                 margin-left: 55%;
+                color: white;
+                background-color: #1e552c;
             }
         }
 

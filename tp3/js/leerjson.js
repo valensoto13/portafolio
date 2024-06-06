@@ -10,7 +10,7 @@ fetch('js/restaurantes.json')
         document.querySelector('.resultados').innerHTML +=
         /*html*/`<article class="resto">
             <a href="restaurante.html" class="resto"></a>
-            <div class="puntu_resto">${data[i].puntuacion}</div>
+            <div class="puntu_resto">${data[i].rango}</div>
             <div class="imagen-resto">
                 <img src="${data[i].avatar.src}" alt="">
             </div>
@@ -21,7 +21,7 @@ fetch('js/restaurantes.json')
             </p>
             <br>
             <button class="estrellas-icon">
-             ${data[i].rango}
+             ${data[i].puntuacion}
             </button>
         </article>` 
        
