@@ -14,10 +14,10 @@ fetch('js/restaurantes.json')
          <div class="imagen-resto">
              ${data[i].avatar.src}
          </div>
-         <h3><a href="restaurante.html"> ${data[i].category}</a></h3>
+         <h3><a href="restaurante.html"> ${data[i].name}</a></h3>
          <br>
-         <p>Asian, Chinese<br>
-         9:00-11:00
+         <p>${data[i].category}<br>
+         ${data[i].horario}
          </p>
          <br>
          <button class="estrellas-icon">
