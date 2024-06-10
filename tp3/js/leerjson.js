@@ -6,6 +6,27 @@ fetch('js/restaurantes.json')
     })
 .then(data => {
       for (let i=0; i < 7; i++){
+        let puntu = ""
+        let rango = ""
+       
+          for(let i=0; i < 10; i++){
+          let pantu = " "
+          let rango = data[i].rango
+          if(data[i].puntuacion === 4){
+            pantu = "star star star star"
+          }
+          else if (data[i].puntuacion === 4){
+            pantu = "star star star star"
+          }
+          else if (data[i].puntuacion === 3){
+            pantu = "star star star"
+          }
+          else if (data[i].puntuacion === 2){
+            pantu = "star star"
+          }
+          else if (data[i].puntuacion === 1){
+            pantu = "star"
+          }
        
         document.querySelector('.resultados').innerHTML +=
         /*html*/`<article class="resto">
