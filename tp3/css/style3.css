@@ -85,24 +85,26 @@ main{
 
 
         .agregar{
-            /* background-color: #1e552c; */
+            background-color: #1e552c;
             width: 15%;
             height: 35px;
-            margin-left: 5%;
-            background-color: aqua;
+            display: flex;
+            color: white;
+            border-radius: 5px;
 
             .fa-minus{
                 margin-top: 10px;
                 margin-left: 15%;
             }
 
-            .text{
-                margin-left: 5%;
+            p{
+                margin-left: 20%;
+                margin-top: 8px;
             }
 
             .fa-plus{
-                margin-left: 30%;
-                margin-top: -100px;
+                margin-right: 20%;
+                margin-top: 10px;
 
             }
         }
