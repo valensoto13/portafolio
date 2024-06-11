@@ -10,7 +10,7 @@ cont.innerText = counter
 
 
 function aumentar(){
-    if (counter < 3){
+    if (counter < 10){
         console.log("sumando")
         counter = counter + 1
         cont.innerText = counter

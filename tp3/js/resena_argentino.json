@@ -1,0 +1,72 @@
+[
+    {
+      "nombre": "Juan Perez",
+      "calificacion": "4",
+      "plato": "Empanadas",
+      "img": "https://example.com/juanperez.jpg",
+      "descripcion": "Las empanadas son deliciosas, recomiendo probar las de carne"
+    },
+    {
+      "nombre": "Maria Gomez",
+      "calificacion": "5",
+      "plato": "Asado",
+      "img": "https://example.com/mariagomez.jpg",
+      "descripcion": "El asado es espectacular, la carne se deshace en la boca"
+    },
+    {
+      "nombre": "Carlos Rodriguez",
+      "calificacion": "3",
+      "plato": "Milanesa",
+      "img": "https://example.com/carlosrodriguez.jpg",
+      "descripcion": "La milanesa estaba bien, pero le faltaba un poco de sabor"
+    },
+    {
+      "nombre": "Luisa Fernandez",
+      "calificacion": "2",
+      "plato": "Pizza",
+      "img": "https://example.com/luisafernandez.jpg",
+      "descripcion": "La pizza no estaba buena, la masa estaba cruda"
+    },
+    {
+      "nombre": "Ana Silva",
+      "calificacion": "5",
+      "plato": "Sushi",
+      "img": "https://example.com/anasilva.jpg",
+      "descripcion": "El sushi es fresco y de excelente calidad, lo recomiendo"
+    },
+    {
+      "nombre": "Pedro Martinez",
+      "calificacion": "4",
+      "plato": "Pastas",
+      "img": "https://example.com/pedromartinez.jpg",
+      "descripcion": "Las pastas son caseras y deliciosas, me encanta"
+    },
+    {
+      "nombre": "Laura Lopez",
+      "calificacion": "3",
+      "plato": "Parrilla",
+      "img": "https://example.com/lauralopez.jpg",
+      "descripcion": "La parrilla estaba bien, pero la carne estaba un poco dura"
+    },
+    {
+      "nombre": "Diego Torres",
+      "calificacion": "5",
+      "plato": "Ceviche",
+      "img": "https://example.com/diegotorres.jpg",
+      "descripcion": "El ceviche es fresco y delicioso, lo recomiendo"
+    },
+    {
+      "nombre": "Sofia Ramirez",
+      "calificacion": "4",
+      "plato": "Tacos",
+      "img": "https://example.com/sofiaramirez.jpg",
+      "descripcion": "Los tacos son auténticos y sabrosos, me encantan"
+    },
+    {
+      "nombre": "Eduardo Vargas",
+      "calificacion": "3",
+      "plato": "Sopa",
+      "img": "https://example.com/eduardovargas.jpg",
+      "descripcion": "La sopa estaba bien, pero le faltaba un poco de sazón"
+    }
+  ]

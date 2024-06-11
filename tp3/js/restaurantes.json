@@ -1,7 +1,7 @@
 [
     {
       "truck_id": "66",
-      "name": "King of the Wings",
+      "name": "Asador criollo",
       "category": "American",
       "bio": "International award winning Food truck. Australia's first American style chicken wing food truck!! \r\nOffering 5 unique flavours of succulent, flavoursome, crispy wings!! Taste the hype!\r\nRepresented Australia in New York in 2016 for the Worlds Biggest Buffalo Wing Festival, current holder of Best Food Truck Brisbane (Eat Drink Awards 2018)... \r\nThis truck is a must try for wing lovers!!",
       "avatar": {
@@ -25,7 +25,7 @@
     },
     {
       "truck_id": "71",
-      "name": "Koma Sliders",
+      "name": "Ceviche",
       "category": "Korean",
       "bio": "\"It's Korean.  It's American. It's Slider-licious!\"  True to our moniker, Koma Sliders is food truck that stands out by fusing two different cuisines and serving up something different and delicious.   From our cook-to-order fully loaded fries that come topped off with mozzarella cheese, Bulgogi beef, caramelised kimchi, and aioli + spicy mayo.  To the meats that are prepared in our original, made-from-scratch marinades.  To our style of cooking, juicy Korean BBQ meats cooked right in front of your eyes for our sliders.   Everything has a Korean inspiration behind it.  ",
       "avatar": {
@@ -44,7 +44,7 @@
       "twitter_handle": "komasliders",
       "direccion": "Mar del Plata 8823, Tortuguitas",
       "horario": "9.00 - 15.00hs",
-      "puntuacion": "star star star star",
+      "puntuacion": "4",
       "rango": "3"
     },
     {
@@ -64,7 +64,7 @@
       "twitter_handle": "",
       "direccion": "Sarratea 583, Villa de Mayo",
       "horario": "12.00 - 23.00hs",
-      "puntuacion": "star star",
+      "puntuacion": "2",
       "rango": "2"
     },
     {
@@ -88,7 +88,7 @@
       "twitter_handle": "RSPizzaQLD",
       "direccion": "Colonia Carolla, Córdoba",
       "horario": "11.00 - 02.00hs",
-      "puntuacion": "star star person",
+      "puntuacion": "3",
       "rango": "3"
     },
     {

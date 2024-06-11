@@ -8,23 +8,17 @@ fetch('js/restaurantes.json')
       for (let i=0; i < 7; i++){
         let puntu = ""
         let rango = ""
-       
-          for(let i=0; i < 10; i++){
-          let pantu = " "
-          let rango = data[i].rango
-          if(data[i].puntuacion === 4){
+
+          if(data[i].puntuacion === "4"){
             pantu = "star star star star"
           }
-          else if (data[i].puntuacion === 4){
-            pantu = "star star star star"
-          }
-          else if (data[i].puntuacion === 3){
+          else if (data[i].puntuacion === "3"){
             pantu = "star star star"
           }
-          else if (data[i].puntuacion === 2){
+          else if (data[i].puntuacion === "2"){
             pantu = "star star"
           }
-          else if (data[i].puntuacion === 1){
+          else if (data[i].puntuacion === "1"){
             pantu = "star"
           }
        
@@ -41,9 +35,9 @@ fetch('js/restaurantes.json')
             ${data[i].horario}
             </p>
             <br>
-            <button class="estrellas-icon">
+            <div class="estrellas-icon">
              ${data[i].puntuacion}
-            </button>
+            </div>
         </article>` 
        
     }

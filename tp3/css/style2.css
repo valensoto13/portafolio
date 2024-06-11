@@ -73,20 +73,19 @@ main{
         background-color: aqua; */
 
             .resultados{
-                gap: 50px;
+
                 width: 100%;
                 height: 100%;
-                display: flex;
-                /* justify-content: space-between; */
+
     
                 .resto{
-
+                    gap: 50px;
                     height: 220px;
                     width: 90%;
                     position: relative;
-                    background-color: #123d20;
                     color: black;
                     left: 5%;
+                    box-shadow: 0 0 15px -2px  black;
     
                     .imagen-resto{
                         width: 40%;
@@ -107,7 +106,7 @@ main{
                         display: grid;
                         place-items: center;
                         left: 35%;
-                        top: 55px;
+                        top: 125px;
                         border-radius: 10px 0;
                         box-shadow: 0 0 15px -2px  black;
                     }
@@ -117,7 +116,7 @@ main{
                         font-size: 30px;
                         padding: 10px;
                         margin-left: 50%;
-                        margin-top: -170px
+                        margin-top: -200px
                     }
     
                     p{
