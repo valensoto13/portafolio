@@ -3,70 +3,70 @@
       "nombre": "Juan Perez",
       "calificacion": "4",
       "plato": "Empanadas",
-      "img": "https://example.com/juanperez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "Las empanadas son deliciosas, recomiendo probar las de carne"
     },
     {
       "nombre": "Maria Gomez",
       "calificacion": "5",
       "plato": "Asado",
-      "img": "https://example.com/mariagomez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "El asado es espectacular, la carne se deshace en la boca"
     },
     {
       "nombre": "Carlos Rodriguez",
       "calificacion": "3",
       "plato": "Milanesa",
-      "img": "https://example.com/carlosrodriguez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "La milanesa estaba bien, pero le faltaba un poco de sabor"
     },
     {
       "nombre": "Luisa Fernandez",
       "calificacion": "2",
       "plato": "Pizza",
-      "img": "https://example.com/luisafernandez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "La pizza no estaba buena, la masa estaba cruda"
     },
     {
       "nombre": "Ana Silva",
       "calificacion": "5",
       "plato": "Sushi",
-      "img": "https://example.com/anasilva.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "El sushi es fresco y de excelente calidad, lo recomiendo"
     },
     {
       "nombre": "Pedro Martinez",
       "calificacion": "4",
       "plato": "Pastas",
-      "img": "https://example.com/pedromartinez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "Las pastas son caseras y deliciosas, me encanta"
     },
     {
       "nombre": "Laura Lopez",
       "calificacion": "3",
       "plato": "Parrilla",
-      "img": "https://example.com/lauralopez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "La parrilla estaba bien, pero la carne estaba un poco dura"
     },
     {
       "nombre": "Diego Torres",
       "calificacion": "5",
       "plato": "Ceviche",
-      "img": "https://example.com/diegotorres.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "El ceviche es fresco y delicioso, lo recomiendo"
     },
     {
       "nombre": "Sofia Ramirez",
       "calificacion": "4",
       "plato": "Tacos",
-      "img": "https://example.com/sofiaramirez.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "Los tacos son auténticos y sabrosos, me encantan"
     },
     {
       "nombre": "Eduardo Vargas",
       "calificacion": "3",
       "plato": "Sopa",
-      "img": "https://example.com/eduardovargas.jpg",
+      "img": "./img/pantera.png",
       "descripcion": "La sopa estaba bien, pero le faltaba un poco de sazón"
     }
   ]
