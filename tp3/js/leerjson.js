@@ -62,40 +62,23 @@ fetch('js/restaurantes.json')
 .then(response => {
      return response.json()
     })
-    .then(data => {
+    .then((data) => {
+      data.forEach(element => {
+        resto.appendChild=""
+    
+      });
       for (let i=0; i < 7; i++){
-        let puntu = ""
-        let rango = ""
 
-          if(data[i].puntuacion === "4"){
-            puntu = "star star star star"
-          }
-          else if (data[i].puntuacion === "3"){
-            puntu = "star star star"
-          }
-          else if (data[i].puntuacion === "2"){
-            puntu = "star star"
-          }
-          else if (data[i].puntuacion === "1"){
-            puntu = "star"
-          }
+        // almaceno en la variable restaurante el valor de i del FOR
+        let restaurante = data[i];
 
-          if(data[i].rango === "4"){
-            rango = "euro euro euro euro"
-          }
-          else if (data[i].rango === "3"){
-            rango = "euro euro euro"
-          }
-          else if (data[i].rango === "2"){
-            rango = "euro euro"
-          }
-          else if (data[i].rango === "1"){
-            rango = "euro"
-          }
+        let cartaRestaurante = document.createElement("div");
+        cartaRestaurante.classList.add("restaurantes");
 
-       
-          document.querySelector('.restaurantes').innerHTML +=
-            /*html*/`
+        // almaceno en la variable cartaRestaurante.id el valor de i del restaurante.truck_id
+        cartaRestaurante.id = restaurante.truck_id;
+
+        cartaRestaurante.innerHTML = /*html*/`
               <h3>${data[i].name}</h3>
               <h4>${data[i].category}</h4>
               <div class="euro">
@@ -131,8 +114,20 @@ fetch('js/restaurantes.json')
                 <p>${data[i].bio}</p>
               </div>` 
 
-          }
-        })
+              cartaRestaurante.addEventListener("click", function () {
+                let idRestauranteSeleccionado = restaurante.truck_id;
+                //almaceno en CACHÉ la variable indiceCache el valor de idRestauranteSeleccionado
+                localStorage.setItem("indiceCache", idRestauranteSeleccionado);
+                console.log(idRestauranteSeleccionado);
+              });
+        
+              resto.appendChild(cartaRestaurante);
+            }
+          });
+        
+        // obtengo desde la caché el valor almacenado en indiceCache
+        console.log("con localstorage " + localStorage.getItem("indiceCache"));
+        let k = localStorage.getItem("indiceCache");
 
            
      
