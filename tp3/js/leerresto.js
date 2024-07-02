@@ -1,31 +1,25 @@
 let options = document.getElementById('options');
 
 let guardar = (id) => {
-    localStorage.setItem("res", id);
+    localStorage.setItem("plato", id);
 };
 
 fetch('js/resto.json')
     .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
         return response.json();
     })
     .then(data => {
-        let restoId = localStorage.getItem("resto");
-        
-        // Buscar el restaurante por ID
-        let restaurante = data.find(resto => resto.id == restoId);
-        
-        if (restaurante) {
-            // Mostrar nombre del restaurante
-            document.querySelector('#resto-name').innerHTML = restaurante.name;
-            
-            // Mostrar el menú del restaurante
-            restaurante.menu.forEach(item => {
+        data.forEach(e => {
+            if (e.id == localStorage.getItem("resto")) {
+                document.querySelector("#resto-name").innerHTML = e.name;
+            }
+        })
+        data.forEach(e => {
+            if (e.id == localStorage.getItem("resto")) {
+                e.menu.forEach(m => {
                 options.innerHTML += `
-                <h3 id="${item.id}">${item.name}</h3>
-                <h4>${item.category}</h4>
+                <h3 id="${m.id}">${m.name}</h3>
+                <h4>${m.ubic}</h4>
                 <div class="euro">
                     <div class="plata">
                         <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
@@ -33,20 +27,20 @@ fetch('js/resto.json')
                     <div class="plata">
                         <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
                     </div>
-                    <div class="plata">${item.rango}</div>
+                    <div class="plata">${'<span class="icons">euro_symbol</span>'.repeat(3-e.value.cost)}</div>
                 </div>
-                <div class="puntu_resto">${item.puntuacion}</div>
+                <div class="puntu_resto">${'<span class="icons selected">star</span>'.repeat(e.value.stars)}</div>
                 <div class="precio_resto"></div>
                 <br><br><br>
                 <div class="icons_resto">
                     <div class="iconos">
                         <div class="icon">
                             <i class="fa-regular fa-clock"></i>
-                            <h3>${item.horario}</h3>
+                            <h3>${m.time}</h3>
                         </div>
                         <div class="icon">
                             <i class="fa-solid fa-location-dot"></i>
-                            <h3>1.5 KM</h3>
+                            <h3>${m.dist}/h3>
                         </div>
                         <div class="icon">
                             <i class="fa-solid fa-bell-concierge"></i>
@@ -54,16 +48,11 @@ fetch('js/resto.json')
                         </div>
                     </div>
                 </div>
-                <div class="descri"><p>${item.bio}</p></div>`;
-            });
-        } else {
-            console.error('No se encontró el restaurante con el ID almacenado en localStorage.');
+                <div class="descri"><p>${m.bio}</p></div>`;
+            })
         }
     })
-    .catch(error => {
-        console.error('Error fetching or parsing data:', error);
-    });
-
+})
 
 
 
