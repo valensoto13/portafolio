@@ -128,13 +128,7 @@ fetch('js/restaurantes.json')
                 </div>
               </div>
               <div class="descri">
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. A numquam quam porro
-                    labore neque incidunt quis. Consectetur
-                    eveniet veniam nemo? Vero labore maxime
-                    ipsum aperiam, corporis eum magnam
-                    explicabo exercitationem?
-                </p>
+                <p>${data[i].bio}</p>
               </div>` 
 
           }
