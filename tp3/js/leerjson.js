@@ -56,6 +56,48 @@ fetch('js/restaurantes.json')
     }
 })
 
+// let guardar=(id)=>{
+//   localStorage.setItem("restaurante",id);
+// }
+
+// fetch('js/restaurantes.json')
+
+// .then(response => {
+  
+//   return response.json()
+// })
+
+// .then(data => {
+//   data.forEach(e=>{
+//     document.getElementById('restoList').innerHTML +=/html/`
+//     <a id="${e.id}" href="./menu.html" class="restaurantes flex" onClick="guardar(id)">
+//       <div class="img center">
+//         <img src="${e.img.src}" alt="${e.img.alt}" />
+//         <div class="distancia">${e.dist}</div>
+//       </div>
+//       <div class="descripcion">
+//       <div class="nombre">${e.name}</div>
+//       <div class="datos">
+//         <div>${e.ubic}</div>
+//         <div>${e.time}</div>
+//       </div>
+//       <div class="valoracion flex">
+//         <div class="estrellas flex">
+//           ${'<span class="icons selected">star</span>'.repeat(e.value.stars)}
+//           ${'<span class="icons">star</span>'.repeat(5-e.value.stars)}
+//           <div class="n-resenias">(${e.value.coments})</div>
+//         </div>
+//         <div class="costo">
+//           ${'<span class="icons selected">euro_symbol</span>'.repeat(e.value.cost)}
+//           ${'<span class="icons">euro_symbol</span>'.repeat(3-e.value.cost)}
+//         </div>
+//       </div>
+//       <div class="puntaje">${e.value.stars}</div>
+//       </div>
+//     </a>`
+//     })
+//   })
+
 let restaurante = document.querySelector(".restaurantes")
 
 fetch('js/restaurantes.json')
@@ -67,8 +109,6 @@ fetch('js/restaurantes.json')
         resto.appendChild=""
     
       });
-      for (let i=0; i < 7; i++){
-
         // almaceno en la variable restaurante el valor de i del FOR
         let restaurante = data[i];
 
@@ -123,61 +163,9 @@ fetch('js/restaurantes.json')
         
               resto.appendChild(cartaRestaurante);
             }
-          });
+          );
         
         // obtengo desde la caché el valor almacenado en indiceCache
         console.log("con localstorage " + localStorage.getItem("indiceCache"));
-        let k = localStorage.getItem("indiceCache");
-
-           
-     
-
-//   .then((data) => {
-//     data.forEach(element => {
-//       resto.appendChild=""
-     
-//     });
-//       // almaceno en la variable restaurante el valor de i del FOR
-//       let restaurante = data[i];
-
-//       let cartaRestaurante = document.createElement("div");
-//       cartaRestaurante.classList.add("resto");
-//       // almaceno en la variable cartaRestaurante.id el valor de i del restaurante.truck_id
-//       cartaRestaurante.id = restaurante.truck_id;
-//       cartaRestaurante.innerHTML = /*html*/ `
-//         <div class="imagen_resto"><img src=${restaurante.avatar.src} alt=""></div>
-//         <div class="desc_resto">
-//           <h3>${restaurante.name}</h3>
-//           <h5 class="gris_txt">
-//             <p>${restaurante.direccion}</p>
-//             <p>${restaurante.horario}s</p>
-//           </h5>
-//           <div class="precio_val">
-//             <div class="valoracion verde_txt">
-//               <i class="iconos">${restaurante.puntuacion}</i>
-//               (72)
-//             </div>
-//             <div class="precio verde_txt">
-//               <i class="iconos">attach_money</i><i class="iconos">attach_money</i><i
-//                   class="iconos gris_txt">attach_money</i>
-//             </div>
-//           </div>
-//         </div>
-//         <div class="puntuacion">${restaurante.puntuacion}</div>
-//         <div class="distancia"> 3KM</div>
-//       `;
-
-//       cartaRestaurante.addEventListener("click", function () {
-//         let idRestauranteSeleccionado = restaurante.truck_id;
-//         //almaceno en CACHÉ la variable indiceCache el valor de idRestauranteSeleccionado
-//         localStorage.setItem("indiceCache", idRestauranteSeleccionado);
-//         console.log(idRestauranteSeleccionado);
-//       });
-
-//       resto.appendChild(cartaRestaurante);
-//     }
-//   });
-
-// // obtengo desde la caché el valor almacenado en indiceCache
-// console.log("con localstorage " + localStorage.getItem("indiceCache"));
-// let k = localStorage.getItem("indiceCache");
+        let k = localStorage.getItem("indiceCache");        
+    
