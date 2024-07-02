@@ -9,7 +9,8 @@
         "alt": "",
         "title": ""
       },
-      "menu" : {
+      "menu" : [
+      {
         "plato": "Empanadas",
         "description": "Traditional Argentine turnovers filled with meat, cheese, or vegetables",
         "price": "5.50",
@@ -112,7 +113,79 @@
         "vegan": "false",
         "kcal": "400",
         "glutenfree": "false"
-      },
+      }],
+      "resena" : [
+        {
+          "nombre": "Juan Perez",
+          "calificacion": "4",
+          "plato": "Empanadas",
+          "img": "./img/pantera.png",
+          "descripcion": "Las empanadas son deliciosas, recomiendo probar las de carne"
+        },
+        {
+          "nombre": "Maria Gomez",
+          "calificacion": "5",
+          "plato": "Asado",
+          "img": "./img/pantera.png",
+          "descripcion": "El asado es espectacular, la carne se deshace en la boca"
+        },
+        {
+          "nombre": "Carlos Rodriguez",
+          "calificacion": "3",
+          "plato": "Milanesa",
+          "img": "./img/pantera.png",
+          "descripcion": "La milanesa estaba bien, pero le faltaba un poco de sabor"
+        },
+        {
+          "nombre": "Luisa Fernandez",
+          "calificacion": "2",
+          "plato": "Pizza",
+          "img": "./img/pantera.png",
+          "descripcion": "La pizza no estaba buena, la masa estaba cruda"
+        },
+        {
+          "nombre": "Ana Silva",
+          "calificacion": "5",
+          "plato": "Sushi",
+          "img": "./img/pantera.png",
+          "descripcion": "El sushi es fresco y de excelente calidad, lo recomiendo"
+        },
+        {
+          "nombre": "Pedro Martinez",
+          "calificacion": "4",
+          "plato": "Pastas",
+          "img": "./img/pantera.png",
+          "descripcion": "Las pastas son caseras y deliciosas, me encanta"
+        },
+        {
+          "nombre": "Laura Lopez",
+          "calificacion": "3",
+          "plato": "Parrilla",
+          "img": "./img/pantera.png",
+          "descripcion": "La parrilla estaba bien, pero la carne estaba un poco dura"
+        },
+        {
+          "nombre": "Diego Torres",
+          "calificacion": "5",
+          "plato": "Ceviche",
+          "img": "./img/pantera.png",
+          "descripcion": "El ceviche es fresco y delicioso, lo recomiendo"
+        },
+        {
+          "nombre": "Sofia Ramirez",
+          "calificacion": "4",
+          "plato": "Tacos",
+          "img": "./img/pantera.png",
+          "descripcion": "Los tacos son auténticos y sabrosos, me encantan"
+        },
+        {
+          "nombre": "Eduardo Vargas",
+          "calificacion": "3",
+          "plato": "Sopa",
+          "img": "./img/pantera.png",
+          "descripcion": "La sopa estaba bien, pero le faltaba un poco de sazón"
+        }
+      ],
       "cover_photo": {
         "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/header/public/images/King%20of%20the%20Wings/image.jpeg?itok=GDIv3sIa",
         "alt": "",
@@ -137,7 +210,7 @@
         "alt": "",
         "title": ""
       },
-      "menu" :{
+      "menu" :[{
         "plato": "Ceviche",
         "description": "Fresh fish marinated in lime juice, mixed with onions, cilantro, and rocoto peppers.",
         "price": "15.99",
@@ -240,7 +313,7 @@
         "vegan": "false",
         "kcal": "390",
         "glutenfree": "false"
-      },
+      }],
       "cover_photo": {
         "src": "https://www.bnefoodtrucks.com.au/sites/foodtrucks/files/styles/header/public/images/Koma%20Sliders/untitled.jpg?itok=C7S-gErO",
         "alt": "",
