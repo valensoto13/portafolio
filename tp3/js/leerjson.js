@@ -56,7 +56,7 @@ fetch('js/restaurantes.json')
     }
 })
 
-let restaurante = document.querySelector(".resturante")
+let restaurante = document.querySelector(".restaurantes")
 
 fetch('js/restaurantes.json')
 .then(response => {
