@@ -30,9 +30,6 @@ fetch('js/resto.json')
                 })
             }
         })
-        foundResto.menu.forEach(m => {
-
-        });
     })
 
 
