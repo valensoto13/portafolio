@@ -94,7 +94,7 @@ fetch('js/restaurantes.json')
           }
 
        
-          document.querySelector('.restaurante').innerHTML +=
+          document.querySelector('.restaurantes').innerHTML +=
             /*html*/`
               <h3>${data[i].name}</h3>
               <h4>${data[i].category}</h4>
