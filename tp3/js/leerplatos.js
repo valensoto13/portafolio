@@ -1,48 +1,61 @@
 // CXOMILLA INVERTIDA
 
-let platos = document.querySelector(".resultados")
+// let platos = document.querySelector(".resultados")
+let options = document.getElementById('options')
 
-fetch('js/platos_argentinos.json')
+let guardar=(id)=>{
+    localStorage.setItem("plato",id);
+}
+
+fetch('js/resto.json')
 .then((response) => {
      return response.json()
     })
-.then((plato) => {
-      for (let i=0; i < plato.length; i++){
-        platos.innerHTML +=
-        /*html*/`<article class="resto">
-                        <div class="imagen-resto">
-                            <img src="${plato[i].image}">
-                        </div>
-                        <h3>${plato[i].plato}</h3>
-                        <p>${plato[i].description}</p>
-                        <a href="plato.html">Leer más</a>
-                        <div class="puntu_resto">$${plato[i].price}</div>
-                    </article><br>`;
-       
-    }
-})
-
-let plato = document.querySelector(".resultados")
-
-fetch('js/platos_peruanos.json')
-.then((response) => {
-     return response.json()
+.then(data => {
+    data.forEach(e => {
+        if(e.id==localStorage.getItem("resto")){
+            document.querySelector('#resto-name').innerHTML=e.name;
+        }
     })
-.then((plato) => {
-      for (let i=0; i < plato.length; i++){
-        platos.innerHTML +=
-        /*html*/`<article class="resto">
-                        <div class="imagen-resto">
-                            <img src="${plato[i].image}">
-                        </div>
-                        <h3>${plato[i].plato}</h3>
-                        <p>${plato[i].description}</p>
-                        <a href="plato.html">Leer más</a>
-                        <div class="puntu_resto">$${plato[i].price}</div>
-                    </article><br>`;
-       
-    }
+    data.forEach(e => {
+        if (e.id==localStorage.getItem("resto")) {
+            e.menu.forEach(m => {
+                options.innerHTML +=/*html*/`
+                <article class="resto">
+                    <div class="imagen-resto">
+                        <img src="${m[i].image}">
+                    </div>
+                    <h3>${m[i].plato}</h3>
+                    <p>${m[i].description}</p>
+                    <a href="plato.html">Leer más</a>
+                    <div class="puntu_resto">$${m[i].price}</div>
+                </article><br>`;
+            });
+        }
+    });   
 })
+
+// let plato = document.querySelector(".resultados")
+
+// fetch('js/platos_peruanos.json')
+// .then((response) => {
+//      return response.json()
+//     })
+// .then((plato) => {
+//       for (let i=0; i < plato.length; i++){
+//         platos.innerHTML +=
+//         /*html*/`<article class="resto">
+//                         <div class="imagen-resto">
+//                             <img src="${plato[i].image}">
+//                         </div>
+//                         <h3>${plato[i].plato}</h3>
+//                         <p>${plato[i].description}</p>
+//                         <a href="plato.html">Leer más</a>
+//                         <div class="puntu_resto">$${plato[i].price}</div>
+//                     </article><br>`;
+       
+//     }
+// })
 console.log("LocalStorage" + localStorage.getItem("variablelocal"));
 
 let suma = 4444

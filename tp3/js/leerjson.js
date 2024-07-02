@@ -1,5 +1,9 @@
 let resto = document.querySelector(".resultados")
 
+let guardar=(id)=>{
+  localStorage.setItem("resto",id);
+}
+
 fetch('js/resto.json')
 .then(response => {
      return response.json()
@@ -26,9 +30,7 @@ fetch('js/resto.json')
     }
 })
 
-let guardar=(id)=>{
-  localStorage.setItem("resto",id);
-}
+
 
 // fetch('js/resto.json')
 
