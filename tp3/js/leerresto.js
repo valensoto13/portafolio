@@ -1,7 +1,7 @@
 let options = document.getElementById('options');
 
 let guardar = (id) => {
-    localStorage.setItem("plato", id);
+    localStorage.setItem("res", id);
 };
 
 fetch('js/resto.json')

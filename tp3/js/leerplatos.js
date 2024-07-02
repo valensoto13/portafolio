@@ -2,7 +2,7 @@
 let options = document.getElementById('options')
 
 let guardar=(id)=>{
-    localStorage.setItem("res",id);
+    localStorage.setItem("plato",id);
 }
 
 fetch('js/resto.json')
