@@ -10,7 +10,7 @@ fetch('js/resto.json')
     })
 .then(data => {
       data.forEach(e => {
-        document.querySelector('resultados').innerHTML +=
+        document.getElementById('resultados').innerHTML +=
         /*html*/`<article class="resto">
           <a href="restaurante.html" class="resto"></a>
           <div class="puntu_resto">${'<span class="icons">euro_symbol</span>'.repeat(3-e.value.cost)}</div>
