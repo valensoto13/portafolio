@@ -21,12 +21,12 @@ fetch('js/resto.json')
                 options.innerHTML +=/*html*/`
                 <article class="resto">
                     <div class="imagen-resto">
-                        <img src="${m[i].image}">
+                        <img src="${m.image}">
                     </div>
-                    <h3>${m[i].plato}</h3>
-                    <p>${m[i].description}</p>
+                    <h3>${m.plato}</h3>
+                    <p>${m.description}</p>
                     <a href="plato.html">Leer más</a>
-                    <div class="puntu_resto">$${m[i].price}</div>
+                    <div class="puntu_resto">$${m.price}</div>
                 </article><br>`;
             });
         }
