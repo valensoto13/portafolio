@@ -106,7 +106,7 @@ fetch('js/restaurantes.json')
     })
     .then((data) => {
       data.forEach(element => {
-        resto.appendChild=""
+        restaurante.appendChild=""
     
       });
         // almaceno en la variable restaurante el valor de i del FOR
