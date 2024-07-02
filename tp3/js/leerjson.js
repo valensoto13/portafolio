@@ -54,7 +54,7 @@ fetch('js/restaurantes.json')
 
 .then(data => {
   data.forEach(e=>{
-    document.getElementById('.resultados').innerHTML +=/html/`
+    document.getElementById('resultados').innerHTML +=/html/`
       <article class="resto">
           <a href="restaurante.html" class="resto"></a>
           <div class="puntu_resto">${e[i].rango}</div>
