@@ -1,47 +1,39 @@
 let options = document.getElementById('options');
 
 let guardar = (id) => {
-    localStorage.setItem("res", id);
+    localStorage.setItem("plato", id);
 };
 
 fetch('js/resto.json')
     .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
         return response.json();
     })
     .then(data => {
-        let restoId = localStorage.getItem("resto");
-
-        if (!restoId) {
-            throw new Error('No resto ID found in localStorage');
-        }
-
-        let foundResto = data.find(e => e.id == restoId);
-
-        if (!foundResto) {
-            throw new Error('Resto with ID ' + restoId + ' not found in JSON');
-        }
-
-        document.querySelector('#resto-name').innerHTML = foundResto.name;
-
+        data.forEach(e => {
+            if (e.id == localStorage.getItem("resto")) {
+                document.querySelector("#resto-name").innerHTML = e.name;
+            }
+        })
+        data.forEach(e => {
+            if (e.id == localStorage.getItem("resto")) {
+                e.menu.forEach(m => {
+                    options.innerHTML += /*html*/`
+                    <article class="resto">
+                        <div class="imagen-resto">
+                            <img src="">
+                        </div>
+                        <h3>${m.name}</h3>
+                        <p>${m.desc}</p>
+                        <a href="plato.html">Leer más</a>
+                        <div class="puntu_resto">$${m.price}</div>
+                    </article><br>`;
+                })
+            }
+        })
         foundResto.menu.forEach(m => {
-            options.innerHTML += /*html*/`
-                <article class="resto">
-                    <div class="imagen-resto">
-                        <img src="${m.image}">
-                    </div>
-                    <h3>${m.plato}</h3>
-                    <p>${m.description}</p>
-                    <a href="plato.html">Leer más</a>
-                    <div class="puntu_resto">$${m.price}</div>
-                </article><br>`;
+
         });
     })
-    .catch(error => {
-        console.error('Error fetching or processing data:', error);
-    });
 
 
 // let plato = document.querySelector(".resultados")
@@ -62,7 +54,7 @@ fetch('js/resto.json')
 //                         <a href="plato.html">Leer más</a>
 //                         <div class="puntu_resto">$${plato[i].price}</div>
 //                     </article><br>`;
-       
+
 //     }
 // })
 console.log("LocalStorage" + localStorage.getItem("variablelocal"));
