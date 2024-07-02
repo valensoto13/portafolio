@@ -69,3 +69,4 @@ fetch('js/restaurantes.json')
         console.log("con localstorage " + localStorage.getItem("indiceCache"));
         let k = localStorage.getItem("indiceCache");        
     
+        
