@@ -1,59 +1,60 @@
+let options = document.getElementById('options');
 
-let options = document.getElementById('options')
-
-let guardar=(id)=>{
-    localStorage.setItem("plato",id);
-}
+let guardar = (id) => {
+    localStorage.setItem("plato", id);
+};
 
 fetch('js/resto.json')
 .then((response) => {
-     return response.json()
-    })
+    return response.json();
+})
 .then(data => {
     data.forEach(e => {
-        if(e.id==localStorage.getItem("resto")){
-            document.querySelector('#resto-name').innerHTML=e.name;
+        if (e.id == localStorage.getItem("resto")) {
+            document.querySelector('#resto-name').innerHTML = e.name;
         }
-    })
+    });
+
     data.forEach(e => {
-        if (e.id==localStorage.getItem("resto")) {
+        if (e.id == localStorage.getItem("resto")) {
             e.menu.forEach(m => {
-                options.innerHTML +=/*html*/`
-                <h3 id="${e.id}">${e[i].name}</h3>
-                <h4>${e[i].category}</h4>
+                options.innerHTML += `
+                <h3 id="${m.id}">${m.name}</h3>
+                <h4>${m.category}</h4>
                 <div class="euro">
-                  <div class="plata">
-                    <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
-                  </div>
-                  <div class="plata">
-                    <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
-                  </div>
-                  <div class="plata">${e[i].rango}</i></div>
+                    <div class="plata">
+                        <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
+                    </div>
+                    <div class="plata">
+                        <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
+                    </div>
+                    <div class="plata">${m.rango}</div>
                 </div>
-                <div class="puntu_resto">${e[i].puntuacion}</div>
+                <div class="puntu_resto">${m.puntuacion}</div>
                 <div class="precio_resto"></div>
                 <br><br><br>
                 <div class="icons_resto">
-                  <div class="iconos">
-                    <div class="icon">
-                        <i class="fa-regular fa-clock"></i>
-                        <h3>${e[i].horario}</h3>
+                    <div class="iconos">
+                        <div class="icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <h3>${m.horario}</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>1.5 KM</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <h3>DELIVERY</h3>
+                        </div>
                     </div>
-                    <div class="icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h3>1.5 KM</h3>
-                    </div>
-                    <div class="icon">
-                        <i class="fa-solid fa-bell-concierge"></i>
-                        <h3>DELIVERY</h3>
-                    </div>
-                  </div>
                 </div>
-                <div class="descri"><p>${e[i].bio}</p></div>`;
+                <div class="descri"><p>${m.bio}</p></div>`;
             });
         }
     });   
 })
+
 
 
 
