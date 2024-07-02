@@ -1,4 +1,4 @@
-let resto = document.querySelector(".resultados")
+let options = document.getElementById('options');
 
 let guardar=(id)=>{
   localStorage.setItem("resto",id);
