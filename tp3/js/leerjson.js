@@ -1,78 +1,50 @@
-// let resto = document.querySelector(".resultados")
+let resto = document.querySelector(".resultados")
 
-// fetch('js/restaurantes.json')
-// .then(response => {
-//      return response.json()
-//     })
-// .then(data => {
-//       for (let i=0; i < 7; i++){
-//         let puntu = ""
-//         let rango = ""
-
-//           // if(data[i].puntuacion === "4"){
-//           //   puntu = "star star star star"
-//           // }
-//           // else if (data[i].puntuacion === "3"){
-//           //   puntu = "star star star"
-//           // }
-//           // else if (data[i].puntuacion === "2"){
-//           //   puntu = "star star"
-//           // }
-//           // else if (data[i].puntuacion === "1"){
-//           //   puntu = "star"
-//           // }
-
-//           // if(data[i].rango === "4"){
-//           //   rango = "euro euro euro euro"
-//           // }
-//           // else if (data[i].rango === "3"){
-//           //   rango = "euro euro euro"
-//           // }
-//           // else if (data[i].rango === "2"){
-//           //   rango = "euro euro"
-//           // }
-//           // else if (data[i].rango === "1"){
-//           //   rango = "euro"
-//           // }
-       
-//         document.querySelector('.resultados').innerHTML +=
-//         /*html*/`` 
-       
-//     }
-// })
-
-let guardar=(id)=>{
-  localStorage.setItem("restaurante",id);
-}
-
-fetch('js/restaurantes.json')
-
+fetch('js/resto.json')
 .then(response => {
-  
-  return response.json()
-})
-
+     return response.json()
+    })
 .then(data => {
-  data.forEach(e=>{
-    document.getElementById('resultados').innerHTML +=/html/`
-      <article class="resto">
+      for (let i=0; i < 7; i++){
+       
+        document.querySelector('.resultados').innerHTML +=
+        /*html*/`<article class="resto">
           <a href="restaurante.html" class="resto"></a>
-          <div class="puntu_resto">${e[i].rango}</div>
+          <div class="puntu_resto">${data[i].rango}</div>
           <div class="imagen-resto">
-            <img src="${e[i].avatar.src}" alt="">
+            <img src="${data[i].avatar.src}" alt="">
           </div>
-          <h3><a id="${e.id}" href="restaurante.html" onClick="guardar(id)"> ${e[i].name}</a></h3>
+          <h3><a id="${e.id}" href="restaurante.html" onClick="guardar(id)"> ${data[i].name}</a></h3>
           <br>
-          <p>${e[i].category}<br>
-            ${e[i].horario}
+          <p>${data[i].category}<br>
+            ${data[i].horario}
           </p>
           <br>
-          <div class="estrellas-icon">${e[i].puntuacion}</div>
-      </article>`
-    })
-  })
+          <div class="estrellas-icon">${data[i].puntuacion}</div>
+      </article>` 
+       
+    }
+})
 
-{/* <a id="${e.id}" href="./menu.html" class="restaurantes flex" onClick="guardar(id)">
+let guardar=(id)=>{
+  localStorage.setItem("resto",id);
+}
+
+// fetch('js/resto.json')
+
+// .then(response => {
+  
+//   return response.json()
+// })
+
+// .then(data => {
+//   data.forEach(e=>{
+//     document.getElementById('resultados').innerHTML +=/html/`
+//       `
+//     })
+//   })
+
+/* <a id="${e.id}" href="./menu.html" class="restaurantes flex" onClick="guardar(id)">
 <div class="img center">
   <img src="${e.img.src}" alt="${e.img.alt}" />
   <div class="distancia">${e.dist}</div>
@@ -96,4 +68,4 @@ fetch('js/restaurantes.json')
 </div>
 <div class="puntaje">${e.value.stars}</div>
 </div>
-</a> */}
+</a> */
