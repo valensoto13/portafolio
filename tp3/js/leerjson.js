@@ -110,17 +110,17 @@ fetch('js/restaurantes.json')
     
       });
         // almaceno en la variable restaurante el valor de i del FOR
-        let restaurante = data[i];
+        let resto = data[i];
 
         let cartaRestaurante = document.createElement("div");
-        cartaRestaurante.classList.add("restaurantes");
+        cartaRestaurante.classList.add("restaurante");
 
         // almaceno en la variable cartaRestaurante.id el valor de i del restaurante.truck_id
-        cartaRestaurante.id = restaurante.truck_id;
+        cartaRestaurante.id = resto.truck_id;
 
         cartaRestaurante.innerHTML = /*html*/`
-              <h3>${data[i].name}</h3>
-              <h4>${data[i].category}</h4>
+              <h3>${resto[i].name}</h3>
+              <h4>${resto[i].category}</h4>
               <div class="euro">
                 <div class="plata">
                     <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
@@ -128,17 +128,17 @@ fetch('js/restaurantes.json')
                 <div class="plata">
                     <i class="fa-solid fa-euro-sign" style="color: #4bec99;"></i>
                 </div>
-                <div class="plata">${data[i].rango}</i>
+                <div class="plata">${resto[i].rango}</i>
                 </div>
               </div>
-              <div class="puntu_resto">${data[i].puntuacion}</div>
+              <div class="puntu_resto">${resto[i].puntuacion}</div>
               <div class="precio_resto"></div>
               <br><br><br>
               <div class="icons_resto">
                 <div class="iconos">
                     <div class="icon">
                         <i class="fa-regular fa-clock"></i>
-                        <h3>${data[i].horario}</h3>
+                        <h3>${resto[i].horario}</h3>
                     </div>
                     <div class="icon">
                         <i class="fa-solid fa-location-dot"></i>
@@ -151,11 +151,11 @@ fetch('js/restaurantes.json')
                 </div>
               </div>
               <div class="descri">
-                <p>${data[i].bio}</p>
+                <p>${resto[i].bio}</p>
               </div>` 
 
               cartaRestaurante.addEventListener("click", function () {
-                let idRestauranteSeleccionado = restaurante.truck_id;
+                let idRestauranteSeleccionado = resto.truck_id;
                 //almaceno en CACHÉ la variable indiceCache el valor de idRestauranteSeleccionado
                 localStorage.setItem("indiceCache", idRestauranteSeleccionado);
                 console.log(idRestauranteSeleccionado);
