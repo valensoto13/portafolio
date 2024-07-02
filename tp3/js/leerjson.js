@@ -9,42 +9,28 @@ fetch('js/resto.json')
      return response.json()
     })
 .then(data => {
-      for (let i=0; i < 7; i++){
-       
-        document.querySelector('.resultados').innerHTML +=
+      data.forEach(e => {
+        document.querySelector('resultados').innerHTML +=
         /*html*/`<article class="resto">
           <a href="restaurante.html" class="resto"></a>
-          <div class="puntu_resto">${data[i].rango}</div>
+          <div class="puntu_resto">${'<span class="icons">euro_symbol</span>'.repeat(3-e.value.cost)}</div>
           <div class="imagen-resto">
-            <img src="${data[i].avatar.src}" alt="">
+            <img src="${e.img.src}" alt="">
           </div>
-          <h3><a id="${data.id}" href="restaurante.html" onClick="guardar(id)"> ${data[i].name}</a></h3>
+          <h3><a id="${e.id}" href="restaurante.html" onClick="guardar(id)"> ${e.name}</a></h3>
           <br>
-          <p>${data[i].category}<br>
-            ${data[i].horario}
+          <p>${e.ubic}<br>
+            ${e.time}
           </p>
           <br>
-          <div class="estrellas-icon">${data[i].puntuacion}</div>
+          <div class="estrellas-icon">${'<span class="icons selected">star</span>'.repeat(e.value.stars)}</div>
       </article>` 
+      });
        
-    }
-})
+        
+       
+    })
 
-
-
-// fetch('js/resto.json')
-
-// .then(response => {
-  
-//   return response.json()
-// })
-
-// .then(data => {
-//   data.forEach(e=>{
-//     document.getElementById('resultados').innerHTML +=/html/`
-//       `
-//     })
-//   })
 
 /* <a id="${e.id}" href="./menu.html" class="restaurantes flex" onClick="guardar(id)">
 <div class="img center">
