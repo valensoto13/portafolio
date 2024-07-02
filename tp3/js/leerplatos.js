@@ -1,6 +1,4 @@
-// CXOMILLA INVERTIDA
 
-// let platos = document.querySelector(".resultados")
 let options = document.getElementById('options')
 
 let guardar=(id)=>{
