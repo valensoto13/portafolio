@@ -1,24 +1,33 @@
+let options = document.getElementById('options');
 
-let options = document.getElementById('options')
-
-let guardar=(id)=>{
-    localStorage.setItem("plato",id);
-}
+let guardar = (id) => {
+    localStorage.setItem("res", id);
+};
 
 fetch('js/resto.json')
-.then((response) => {
-     return response.json()
-    })
-.then(data => {
-    data.forEach(e => {
-        if(e.id==localStorage.getItem("resto")){
-            document.querySelector('#resto-name').innerHTML=e.name;
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
+        return response.json();
     })
-    data.forEach(e => {
-        if (e.id==localStorage.getItem("resto")) {
-            e.menu.forEach(m => {
-                options.innerHTML +=/*html*/`
+    .then(data => {
+        let restoId = localStorage.getItem("resto");
+
+        if (!restoId) {
+            throw new Error('No resto ID found in localStorage');
+        }
+
+        let foundResto = data.find(e => e.id == restoId);
+
+        if (!foundResto) {
+            throw new Error('Resto with ID ' + restoId + ' not found in JSON');
+        }
+
+        document.querySelector('#resto-name').innerHTML = foundResto.name;
+
+        foundResto.menu.forEach(m => {
+            options.innerHTML += /*html*/`
                 <article class="resto">
                     <div class="imagen-resto">
                         <img src="${m.image}">
@@ -28,10 +37,12 @@ fetch('js/resto.json')
                     <a href="plato.html">Leer más</a>
                     <div class="puntu_resto">$${m.price}</div>
                 </article><br>`;
-            });
-        }
-    });   
-})
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching or processing data:', error);
+    });
+
 
 // let plato = document.querySelector(".resultados")
 
