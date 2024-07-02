@@ -42,7 +42,7 @@ fetch('js/restaurantes.json')
             <div class="imagen-resto">
                 <img src="${data[i].avatar.src}" alt="">
             </div>
-            <h3><a id="${e.id}" href="restaurante.html" onClick="guardar(id)"> ${data[i].name}</a></h3>
+            <h3><a id="${data.id}" href="restaurante.html" onClick="guardar(id)"> ${data[i].name}</a></h3>
             <br>
             <p>${data[i].category}<br>
             ${data[i].horario}
