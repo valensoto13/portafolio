@@ -15,7 +15,7 @@ fetch('js/resto.json')
           <a href="restaurante.html" class="resto"></a>
           <div class="puntu_resto">${'<span class="icons">euro_symbol</span>'.repeat(3-e.value.cost)}</div>
           <div class="imagen-resto"><img src="${e.img.src}" alt=""></div>
-          <h3><a id="${e.id}" href="restaurante.html" onClick="guardar(id)"> ${e.name}</a></h3>
+          <h3><a id="${e.id}" href="restaurante.html" onclick="guardar(id)"> ${e.name}</a></h3>
           <br>
           <p>${e.ubic}<br>
             ${e.time}
