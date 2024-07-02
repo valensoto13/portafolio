@@ -24,9 +24,6 @@ fetch('js/resto.json')
           <div class="estrellas-icon">${'<span class="icons selected">star</span>'.repeat(e.value.stars)}</div>
       </article>` 
       });
-       
-        
-       
     })
 
 
