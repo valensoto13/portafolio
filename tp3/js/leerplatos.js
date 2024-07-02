@@ -20,10 +20,10 @@ fetch('js/resto.json')
                     options.innerHTML += /*html*/`
                     <article class="resto">
                         <div class="imagen-resto">
-                            <img src="">
+                            <img src="${m.image}" onclick="guardar(id)">
                         </div>
                         <h3>${m.name}</h3>
-                        <p>${m.desc}</p>
+                        <p>${m.description}</p>
                         <a href="plato.html">Leer más</a>
                         <div class="puntu_resto">$${m.price}</div>
                     </article><br>`;
