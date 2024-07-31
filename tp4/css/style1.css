@@ -121,10 +121,10 @@ main{
     }
     .contenedor{
         position: relative;
+        display: flex;
     }
 
     .contenedor {
-        display: flex;
         background-color: aquamarine;
         padding: 2px;
         width: 50%;
