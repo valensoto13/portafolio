@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&quot;
-    rel=" stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <i class="fa-solid fa-bars-staggered"></i>TripWayo
+            <i class="fa-solid fa-bars-staggered"></i>
+            <p>TripWayo</p>
         </div>
 
         <div class="buscador">
             <div class="escribir">
-                <input type="text" placeholder="Buscar restaurante">
+                <input type="text" placeholder="Search here">
             </div>
 
             <button class="buscar">
@@ -29,39 +30,34 @@
 
         <section class="categorias">
             <section class="logos">
-                <div class="product">
-                    <i class="fa-solid fa-plane"></i>
-                </div>
-                <div class="product">
-                    <i class="fa-solid fa-bed"></i>
-                </div>
-                <div class="product">
-                    <i class="fa-solid fa-train"></i>
-                </div>
-                <div class="product">
-                    <i class="fa-solid fa-car"></i>
-                </div>
+                <button class="product">
+                    <i class="fa-solid fa-plane" style="color: #B197FC;"></i>
+                </button>
+                <button class="product">
+                    <i class="fa-solid fa-bed" style="color: #2d9fb4;"></i>
+                </button>
+                <button class="product">
+                    <i class="fa-solid fa-train" style="color: #FFD43B;"></i>
+                </button>
+                <button class="product">
+                    <i class="fa-solid fa-car" style="color: #74C0FC;"></i>
+                </button>
             </section>
         </section>
     </header>
-    
+
     <main>
         <h1>Popular Destinations</h1>
+        <div class="lugares" id="options"></div>
 
-        <section class="lugares">
+        <h2>Top Aventure Trips</h2>
+        
+        <div class="aventuras">
             <article class="lugar">
-                <img src="" alt="">
-                <h3>Santorini</h3>
-                <h4>$2000.0</h4>
+
             </article>
-            <article class="lugar">
-                <img src="" alt="">
-                <h3>Bariloche</h3>
-                <h4>$2400.0</h4>
-            </article>
-        </section>
+        </div>
     </main>
-
+    <script src="js/leerjson.js"></script>
 </body>
-
 </html>
