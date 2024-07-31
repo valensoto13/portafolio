@@ -12,11 +12,10 @@ fetch('js/viajes.json')
     .then(data => {
         data.forEach(e => {
             document.querySelector('.contenedor').innerHTML +=
-        /*html*/`            <img class="control prev" src="img/img1.png" alt="">
+        /*html*/`
             <article class="lugar">
                 <img src="${e.imagen}" alt="">
-                </article>
-            <img class="control next" src="img/img2.png" alt="">`
+            </article>`
         });
     })
 

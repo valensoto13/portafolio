@@ -127,7 +127,7 @@ main{
         display: flex;
         background-color: aquamarine;
         padding: 2px;
-        width: 600px;
+        width: 50%;
         height: 150px;
         overflow: hidden;
         /* flex-wrap: wrap;
