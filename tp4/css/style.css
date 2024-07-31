@@ -5,14 +5,14 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-.imagen{
+/* .imagen{
     height: 637px;
     width: 100%;
     img{
         width: 100%;
         height: 100%;
     }
-}
+} */
 
 h1{
     color: white;
@@ -52,7 +52,7 @@ h2{
         text-align: center;
     } */
 }
-
+/* 
 @media (orientation: landscape){
 
     header{
@@ -80,4 +80,4 @@ h2{
             }
         }
     } 
-}
+} */
