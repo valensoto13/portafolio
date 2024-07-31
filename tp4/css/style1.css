@@ -125,6 +125,7 @@ main{
     }
 
     .contenedor {
+        display: flex;
         background-color: aquamarine;
         padding: 2px;
         width: 50%;
