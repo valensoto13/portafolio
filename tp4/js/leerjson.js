@@ -21,7 +21,16 @@ fetch('js/viajes.json')
     });
 })
 
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' );
-    splide.mount();
-  } );
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide', {
+        perPage: 3,
+        breakpoints: {
+            768: {
+                perPage: 2,
+            },
+            480: {
+                perPage: 1,
+            },
+        }
+    }).mount();
+});
