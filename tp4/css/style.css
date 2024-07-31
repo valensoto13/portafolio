@@ -71,7 +71,7 @@ h2{
             flex-direction: row;
             flex-wrap: wrap;
 
-            .h1, h2, a{
+            h1, h2, a{
                 /* flex-grow: 0;
                 flex-shrink: 0;
                 flex-basis: 50%; */
