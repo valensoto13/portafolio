@@ -123,7 +123,7 @@ main{
         position: relative;
     }
 
-    .contenedor .lugar{
+    .contenedor {
         display: flex;
         background-color: aquamarine;
         padding: 2px;
@@ -135,15 +135,15 @@ main{
         margin-top: 25px; */
 
         .lugar{
-            /* border: 1px solid #ccc; */
+            /* border: 1px solid #ccc;
             border-radius: 8px;
             flex: 1 0 200px;
             max-width: 230px;
-            /* text-align: center; */
+             text-align: center; 
             color: rgb(73, 73, 73);
             height: 400px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; */
 
             .imagen{
                 width: 100%;
