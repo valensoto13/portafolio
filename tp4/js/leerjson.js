@@ -20,3 +20,8 @@ fetch('js/viajes.json')
         </article>` 
     });
 })
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );
