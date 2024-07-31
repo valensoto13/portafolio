@@ -7,6 +7,9 @@
 
 
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100dvh;
     width: 90%;
     margin: auto;
@@ -119,12 +122,20 @@ main{
         font-size: 30px;
         margin-left: 5%;
     }
+    .contenedor{
+        position: relative;
+    }
 
-    .lugares{
+    .contenedor .lugar{
         display: flex;
-        flex-wrap: wrap;
+        background-color: aquamarine;
+        padding: 2px;
+        width: 600px;
+        height: 150px;
+        overflow: hidden;
+        /* flex-wrap: wrap;
         gap: 1em;
-        margin-top: 25px;
+        margin-top: 25px; */
 
         .lugar{
             /* border: 1px solid #ccc; */
