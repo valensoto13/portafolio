@@ -145,15 +145,15 @@ main{
             display: flex;
             flex-direction: column; */
 
-            .imagen{
+            /* .imagen{
                 width: 100%;
                 height: 350px;
-                /* margin-left:5%; */
-            }
+                /* margin-left:5%; 
+            } */
 
             img{
                 width: 100%;
-                height: 100%;
+                height: 150px;
                 border-radius: 30px;
             }
 
