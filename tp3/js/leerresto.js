@@ -35,7 +35,7 @@ fetch('js/resto.json')
                     </div>
                     <div class="plata">${'<span class="icons">euro_symbol</span>'.repeat(3 - m.cost)}</div>
                 </div>
-                <div class="puntu_resto">${'<span class="icons selected">star</span>'.repeat(resto.stars)}</div>
+                <div class="puntu_resto">${'<span class="icons selected">star</span>'.repeat(m.stars)}</div>
                 <div class="precio_resto"></div>
                 <br><br><br>
                 <div class="icons_resto">
