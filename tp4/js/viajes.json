@@ -1,6 +1,6 @@
 [
     {
-      "id":1,
+      "id": "1",
       "lugar": "Machu Picchu",
       "pais": "Perú",
       "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg",
@@ -8,10 +8,33 @@
       "ranking": 4.8,
       "grados": 22,
       "duracion": 7,
-      "descripcion": "Machu Picchu es una antigua ciudad inca en los Andes peruanos, construida en el siglo XV y abandonada antes de la llegada de los españoles. Es uno de los lugares más emblemáticos de Sudamérica y un destino imperdible para los amantes de la historia y la naturaleza."
+      "descripcion": "Machu Picchu es una antigua ciudad inca en los Andes peruanos, construida en el siglo XV y abandonada antes de la llegada de los españoles. Es uno de los lugares más emblemáticos de Sudamérica y un destino imperdible para los amantes de la historia y la naturaleza.",
+      "aventura":
+        {
+        "id":1,
+        "lugar": "Machu Picchu",
+        "pais": "Perú",
+        "aventura": "Camino Inca",
+        "imagen": "https://imachupicchu.com/wp-content/uploads/camino-inca-machu-picchu.jpg",
+        "duracion": 4,
+        "dificultad": 8,
+        "descripcion": "Recorre el famoso Camino Inca hasta llegar a la ciudadela de Machu Picchu",
+        "precio":"15000"
+        },
+      "alojamientos":
+      {
+        "id": 1,
+        "nombre": "Hotel Sumaq Machu Picchu",
+        "lugar": "Machu Picchu, Perú",
+        "ranking": 4.8,
+        "precio": 300,
+        "distancia": "2 km",
+        "imagen": "https://www.sumaqhotelperu.com/wp-content/uploads/2019/09/sumaq-machu-picchu-hotel.jpg"
+      }
+      
     },
     {
-      "id":2,
+      "id": "2",
       "lugar": "Gran Barrera de Coral",
       "pais": "Australia",
       "imagen": "https://media.traveler.es/photos/63ecf8d844c1a0e03615a59e/16:9/w_2560%2Cc_limit/2H0WB0B%2520(1).jpg",
@@ -19,32 +42,100 @@
       "ranking": 4.9,
       "grados": 28,
       "duracion": 10,
-      "descripcion": "La Gran Barrera de Coral es el sistema de arrecifes más grande del mundo, ubicado en la costa noreste de Australia. Es hogar de una increíble variedad de vida marina, incluyendo más de 1,500 especies de peces, 600 especies de coral y muchas otras criaturas."
+      "descripcion": "La Gran Barrera de Coral es el sistema de arrecifes más grande del mundo, ubicado en la costa noreste de Australia. Es hogar de una increíble variedad de vida marina, incluyendo más de 1,500 especies de peces, 600 especies de coral y muchas otras criaturas.",
+      "aventura":
+        {
+          "id":2,
+          "lugar": "Gran Barrera de Coral",
+          "pais": "Australia",
+          "aventura": "Buceo",
+          "imagen": "https://www.civitatis.com/f/australia/port-douglas/buceo-gran-barrera-coral-grid.jpg",
+          "duracion": 3,
+          "dificultad": 6,
+          "descripcion": "Explora la vida marina de la Gran Barrera de Coral en un viaje de buceo",
+          "precio":"20000"
+        },
+        "alojamientos":
+        {
+          "id": 2,
+          "nombre": "Coral Sea Resort Hotel",
+          "lugar": "Gran Barrera de Coral, Australia",
+          "ranking": 4.7,
+          "precio": 250,
+          "distancia": "1 km",
+          "imagen": "https://www.coral-sea-resort-hotel.com/wp-content/uploads/2021/04/coral-sea-resort.jpg"
+      }
+      
     },
     {
-      "id":3,
+      "id": "3",
       "lugar": "Ciudad del Vaticano",
       "pais": "Italia",
-      "imagen": "https://blog-italia.com/wp-content/uploads/2022/11/vaticano-plaza-roma.jpg",
+      "imagen": "(link unavailable)",
       "precio": 1500,
       "ranking": 4.7,
       "grados": 25,
       "duracion": 5,
-      "descripcion": "La Ciudad del Vaticano es un estado soberano dentro de Roma, Italia, y es el centro espiritual de la Iglesia Católica. Es famosa por sus impresionantes edificios, incluyendo la Basílica de San Pedro y la Capilla Sixtina, y alberga numerosas obras de arte y tesoros históricos."
+      "descripcion": "La Ciudad del Vaticano es un estado soberano dentro de Roma, Italia, y es el centro espiritual de la Iglesia Católica. Es famosa por sus impresionantes edificios, incluyendo la Basílica de San Pedro y la Capilla Sixtina, y alberga numerosas obras de arte y tesoros históricos.",
+      "aventura":
+        {
+          "id":3,
+          "lugar": "Ciudad del Vaticano",
+          "pais": "Italia",
+          "aventura": "Visita guiada",
+          "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuwoW39VEUyEpvv3Elcq7iEnfklzRxA95aGw&s",
+          "duracion": 2,
+          "dificultad": 4,
+          "descripcion": "Descubre los tesoros artísticos y históricos de la Ciudad del Vaticano en una visita guiada",
+          "precio":"10000"
+        },
+        "alojamientos":
+        {
+          "id": 3,
+          "nombre": "Hotel Atlante Star",
+          "lugar": "Ciudad del Vaticano, Italia",
+          "ranking": 4.5,
+          "precio": 220,
+          "distancia": "0.5 km",
+          "imagen": "https://media-cdn.tripadvisor.com/media/photo-s/05/2c/1e/d0/hotel-atlante-star.jpg"
+        }
     },
     {
-      "id":4,
-      "lugar": "Torres del Paine",
-      "pais": "Chile",
+      "id": "4",
+      "lugar": "Monte Fitz Roy",
+      "pais": "Aregentina",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22E2tHtMRoJXoqL-FHEOLpkyZnwlNmDfBzg&s",
       "precio": 1800,
       "ranking": 4.8,
       "grados": 18,
       "duracion": 8,
-      "descripcion": "Las Torres del Paine son un parque nacional en la Patagonia chilena, famoso por sus impresionantes montañas, glaciares y ríos. Es un destino popular para los amantes de la naturaleza y el senderismo, con numerosas rutas y actividades al aire libre."
+      "descripcion": "El monte Fitz Roy o cerro Chaltén es una montaña de 3405 m s. n. m. ubicada al oriente del campo de hielo Patagónico Sur en la frontera entre Argentina y Chile, ​​​​​​​​​​​ en la Patagonia, cerca de la villa de El Chaltén.",
+      "aventura":
+        {
+          "id":4,
+          "lugar": "Monte Fitz Roy",
+          "pais": "Argentina",
+          "aventura": "Senderismo",
+          "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtDjZsCFCJ4Yb6sO7IXcYLplwWWFxigRmDAg&s",
+          "duracion": 5,
+          "dificultad": 9,
+          "descripcion": "Recorre los senderos del Monte Fitz Roy y disfruta de la belleza natural de Patagonia",
+          "precio":"15000"
+        },
+        "alojamientos":
+        {
+          "id": 4,
+          "nombre": "Hostería El Pilar",
+          "lugar": "Monte Fitz Roy, Argentina",
+          "ranking": 4.6,
+          "precio": 150,
+          "distancia": "10 km",
+          "imagen": "https://www.interpatagonia.com/fitzroy/hosterialpillarreja.jpg"
+      }
+      
     },
     {
-      "id":5,
+      "id": "5",
       "lugar": "Pirámides de Giza",
       "pais": "Egipto",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQqh987us9Q7h-phtnhFHfCeOuzr3AjPOdQ&s",
@@ -52,10 +143,33 @@
       "ranking": 4.6,
       "grados": 32,
       "duracion": 6,
-      "descripcion": "Las Pirámides de Giza son las únicas de las Siete Maravillas Antiguas que aún existen, y son uno de los lugares más emblemáticos de la historia. Fueron construidas como tumbas para los faraones de la antigua Egipto y son un testimonio de la ingeniería y la arquitectura de la época."
+      "descripcion": "Las Pirámides de Giza son las únicas de las Siete Maravillas Antiguas que aún existen, y son uno de los lugares más emblemáticos de la historia. Fueron construidas como tumbas para los faraones de la antigua Egipto y son un testimonio de la ingeniería y la arquitectura de la época.",
+      "aventura":
+        {
+          "id":5,
+          "lugar": "Pirámides de Giza",
+          "pais": "Egipto",
+          "aventura": "Visita guiada",
+          "imagen":"./img/aventura-giza",
+          "duracion": 2,
+          "dificultad": 5,
+          "descripcion": "Descubre los secretos de las Pirámides de Giza en una visita guiada",
+          "precio":"25000"
+        },
+        "alojamientos":
+        {
+          "id": 5,
+          "nombre": "Mena House",
+          "lugar": "Pirámides de Giza, Egipto",
+          "ranking": 4.7,
+          "precio": 200,
+          "distancia": "1.5 km",
+          "imagen": "https://www.menahousehotel.com/images/mena-house-hotel.jpg"
+        } 
+      
     },
     {
-      "id":6,
+      "id": "6",
       "lugar": "Isla de Bora Bora",
       "pais": "Francia",
       "imagen": "https://photo620x400.mnstatic.com/79f4f391fedae1b23aeef3aff3c5201f/bora-bora.jpg",
@@ -63,17 +177,63 @@
       "ranking": 4.9,
       "grados": 26,
       "duracion": 12,
-      "descripcion": "La Isla de Bora Bora es un destino de ensueño en el Pacífico Sur, famosa por sus aguas cristalinas, playas de arena blanca y paisajes tropicales. Es un lugar ideal para relajarse y disfrutar de la naturaleza, con numerosas actividades como el buceo, el snorkel y el surf."
+      "descripcion": "La Isla de Bora Bora es un destino de ensueño en el Pacífico Sur, famosa por sus aguas cristalinas, playas de arena blanca y paisajes tropicales. Es un lugar ideal para relajarse y disfrutar de la naturaleza, con numerosas actividades como el buceo, el snorkel y el surf.",
+      "aventura":
+        {
+          "id":6,
+          "lugar": "Isla de Bora Bora",
+          "pais": "Francia",
+          "aventura": "Relajación en la playa",
+          "imagen":"./img/aventura-bora-bora.png",
+          "duracion": 7,
+          "dificultad": 3,
+          "descripcion": "Disfruta de la belleza tropical de la Isla de Bora Bora y relájate en sus playas de ensueño",
+          "precio":"1.000.000"
+        },
+        "alojamientos":
+        {
+          "id": 6,
+          "nombre": "Four Seasons Resort Bora Bora",
+          "lugar": "Isla de Bora Bora, Polinesia Francesa",
+          "ranking": 4.9,
+          "precio": 1200,
+          "distancia": "0.8 km",
+          "imagen": "https://www.fourseasons.com/content/dam/fourseasons/images/web/BOR/BOR_045_1280x486.jpg"
+        }
+      
     },
     {
-      "id":7,
-      "lugar": "Monte Everest",
-      "pais": "Nepal",
-      "imagen": "data:image/jpeg;base64,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",
+      "id": "7",
+      "lugar": "Rio de Janeiro",
+      "pais": "Brasil",
+      "imagen": "https://blogskystorage.s3.amazonaws.com/2021/07/skyairline_skyairline_image_801.jpeg",
       "precio": 3500,
       "ranking": 4.8,
-      "grados": -20,
-      "duracion": 14,
-      "descripcion": "El Monte Everest es la montaña más alta del mundo, ubicada en la frontera entre Nepal y Tíbet. Es un desafío para los montañistas y un destino para los amantes de la naturaleza y la aventura."
+      "grados": 30,
+      "duracion": 7,
+      "descripcion": "Río de Janeiro es una ciudad vibrante y culturalmente rica, famosa por sus playas, el Carnaval y el icónico Cristo Redentor. Un destino que ofrece una mezcla de aventura, historia y belleza natural.",
+      "aventura": 
+      {
+        "id": 7,
+        "lugar": "Cristo Redentor",
+        "pais": "Brasil",
+        "aventura": "Excursión",
+        "imagen": "https://turismoenrio.com/img/cristo-redentor-1_min.jpg",
+        "duracion": 1,
+        "dificultad": 2,
+        "descripcion": "Una excursión al Cristo Redentor, una de las Nuevas Siete Maravillas del Mundo, con vistas panorámicas impresionantes de Río de Janeiro.",
+        "precio": "50"
+      },
+      "alojamientos":
+      {
+        "id": 7,
+        "nombre": "Copacabana Palace",
+        "lugar": "Río de Janeiro, Brasil",
+        "ranking": 4.9,
+        "precio": 350,
+        "distancia": "5 km",
+        "imagen": "https://www.belmond.com/getmedia/36d1f6d0-76c1-4c72-94c7-ecae28fb29e1/belmond-copacabana-palace-Exterior.jpg"
+    }
+      
     }
 ]

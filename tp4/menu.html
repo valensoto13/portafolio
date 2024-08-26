@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
-    <title>Document</title>
+
+    <title>TripWayo</title>
 </head>
 
 <body>
+    <div class="contenedor scroll-y altura-maxima">
     <header>
         <div class="logo">
             <i class="fa-solid fa-bars-staggered"></i>
@@ -21,7 +21,7 @@
 
         <div class="buscador">
             <div class="escribir">
-                <input type="text" placeholder="Search here">
+                <input type="Search" placeholder="Search here">
             </div>
 
             <button class="buscar">
@@ -29,37 +29,61 @@
             </button>
         </div>
 
-        <section class="categorias">
-            <section class="logos">
+        <div class="categorias">
+            <div class="logos">
                 <button class="product">
                     <i class="fa-solid fa-plane" style="color: #B197FC;"></i>
                 </button>
                 <button class="product">
-                    <i class="fa-solid fa-bed" style="color: #2d9fb4;"></i>
+                    <a href="alojamiento.html"><i class="fa-solid fa-bed" style="color: #2d9fb4;"></i></a>
                 </button>
                 <button class="product">
-                    <i class="fa-solid fa-train" style="color: #FFD43B;"></i>
+                    <a href=""><i class="fa-solid fa-train" style="color: #FFD43B;"></i></a>
                 </button>
                 <button class="product">
                     <i class="fa-solid fa-car" style="color: #74C0FC;"></i>
                 </button>
-            </section>
-        </section>
+            </div>
+        </div>
     </header>
 
     <main>
         <h1>Popular Destinations</h1>
-        <img class="control prev" src="img/img1.png" alt="">
-        <div class="contenedor" id="options"></div>
-        <img class="control next" src="img/img2.png" alt="">
+        <div class="lugares" id="options">
+            <article class="lugar">
+                <!-- <article class="lugar">
+                    <div class="imagen">
+                        <img src="${e.imagen}" alt="">
+                    </div>
+                    <h3><a id=${e.id} href="lugares.html" onclick=guardar(id)>${e.lugar}</a></h3>
+                    <h4>$${e.precio}</h4> -->
+                </article>
+            </article>
+        </div>
 
         <h2>Top Aventure Trips</h2>
 
-        <div class="aventuras">
+        <div class="aventuras" id="op">
+            <article class="aventu">
+                <!-- <div class="imagen">
+                    <img src="${e.imagen}" alt="">
+                </div>
+                <h3><a id=${e.id} href="aventuras.html" onclick=guardar(id)>${e.lugar}</a></h3>
+                <h4>$${e.precio}</h4> -->
+            </article>
         </div>
+        
     </main>
 
+</div> 
+    <footer>
+        <div class="redondo">
+            <a href="menu.html" ><i class="fa-solid fa-house"></i></a>
+            <i class="fa-solid fa-briefcase"></i>
+            <i class="fa-solid fa-bell"></i>
+            <a href="perfil.html" ><i class="fa-solid fa-user"></i></a>
+        </div>
+    </footer>
     <script src="js/leerjson.js"></script>
 </body>
-
 </html>

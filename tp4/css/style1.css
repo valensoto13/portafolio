@@ -8,8 +8,7 @@
 
 body{
     min-height: 100dvh;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,28 +16,36 @@ body{
     font-size: 100%;
 }
 
-header{
-    height: 400px;
-    width: 100%;
-    padding: 10px;
 
+
+header{
+    height: 300px;
+    width: 100%;
+    padding: 4%;
 
         .logo{
             display: flex;
             justify-content: space-evenly;
-            width: 40%;
+            width: 50%;
             color:black;
             font-size: 25pt;
+            text-decoration: none;
+            height: auto;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            /* p{
+                margin-left: -5%;
+            } */
         }
 
-        .buscador {
-            position: absolute;
-            height: 55px;
-            width: 40%;
-            left: 30%;
+         .buscador {
+            position: relative;
+            width: 100%;
+
             margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
     
             .escribir{
                 position: absolute;
@@ -71,24 +78,16 @@ header{
     
             /* input (usar corchete)yye=submit */
                 
-        }
+         }
 
         .categorias{
-            height: 50%;
-            width: 100%;
-            padding: 3%;
-            margin-top: 150px;
-            display: flex;
-            gap: 20px;
+            margin-top: 80px;
+            margin: 3%;
     
             & .logos{
-                position: absolute;
-                font-size: 35px;
-                left: 25%;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 50%;
+                justify-content: space-evenly;
+                width: 100%;
                 margin-top:15px;
     
     
@@ -111,51 +110,51 @@ header{
 
 
 main{
-    flex: 0 0 80%;
-    width: 100%;
-    padding: 0 0.5em;
+    width: 95%;
+    margin: 3%;
 
     h1{
         font-size: 30px;
         margin-left: 5%;
     }
-    .contenedor{
-        position: relative;
-        display: flex;
-    }
 
-    .contenedor {
+    .lugares, .aventuras{
         display: flex;
-        background-color: aquamarine;
-        padding: 2px;
-        width: 50%;
-        height: 150px;
-        overflow: hidden;
-        /* flex-wrap: wrap;
-        gap: 1em;
-        margin-top: 25px; */
+        gap: 50px;
+        margin-top: 25px;
+        width: 100%;
+        overflow-x: scroll;
 
-        .lugar{
-            /* border: 1px solid #ccc;
+        .lugar, .aventu{
             border-radius: 8px;
             flex: 1 0 200px;
-            max-width: 230px;
-             text-align: center; 
+            /* width: 250px; */
             color: rgb(73, 73, 73);
-            height: 400px;
+            height:400px;
             display: flex;
-            flex-direction: column; */
+            flex-direction: column;
 
-            /* .imagen{
+
+            .imagen{
                 width: 100%;
-                height: 350px;
-                /* margin-left:5%; 
+                height: 300px;
+                /* margin-left:5%; */
+                overflow: hidden;
+            }
+
+            /* .imagen:hover{
+                .img{
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+                }
             } */
 
-            .img{
+            img{
                 width: 100%;
-                height: 150px;
+                height: 100%;
                 border-radius: 30px;
+                background-position: center center;
+                background-size: cover;
             }
 
             h3{
@@ -173,35 +172,189 @@ main{
                 color: black;
                 margin-left: 15%;
             }
+
         }
+    }
+
+    h2{
+        margin-top: 30px;
     }
 }
 
-/* @media (orientation: landscape){
+.perfil{
+    width: 100%;
+    height: 100px;
 
-    header{
-        .portada{
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-            .logos .buscador{
-                flex: 0 0 calc(50% - 10px);
+    .logo{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}
+
+
+
+.profile-container {
+    /* max-width: 1000px; */
+    height: 450px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: aqua;
+
+
+    .profile-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+
+        
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 1em;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+        }
+        
+    }
+}
+
+
+
+
+
+.location {
+    color: #777;
+}
+
+.datos{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .bio{
+        display: flex;
+        /* width: 60%; */
+        height: 50px;
+
+        .icon{
+            border-radius: 50px;
+            height: 45px;
+            width: 5%;
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+
+            .fa-user, .fa-phone, .fa-envelope{
+                margin-top: 10px;
             }
+        }
+
+        h3{
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+
+        p{
+            margin-top: 10px;
+            margin-left: 10%;
         }
     }
 
-    main {
-        .lugares{
+}
+
+:root{
+    --footer:100px;
+}
+
+
+footer{
+    width: 80%;
+    height: 80px;
+    position: sticky;
+    background-color:aquamarine;
+    margin-left: 10%;
+    border-radius: 30px;
+
+    .redondo{
+        height: 90%;
+        display: flex;
+        background-color: transparent;
+        border-radius: 30px;
+        position: relative;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .fa-solid{
+        font-size: 45px;
+        margin-top: 15px;
+    }
+}
+
+.scroll-y{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.altura-maxima{
+    max-height: calc(100vh - var(--footer));
+}
+
+@media (orientation: landscape){
+
+    header{
+        padding: 2%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            .categorias{
+                flex: 0 0 calc(50% - 10px);
+            }
+            .buscador{
+                flex: 0 0 calc(50% - 10px);
+                width: 70%;
+                left: 15%;
+            }
+        
+    }
+
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        .redondo{
+            flex: 0 0 calc(50% - 10px);
+            /* width: 80%; */
+            /* margin-left: 10%; */
+        }
+    }
+
+    main{
+        .profile-container{
             flex-direction: row;
             flex-wrap: wrap;
 
-            .lugar{
-                /* flex-grow: 0;
-                flex-shrink: 0;
-                flex-basis: 50%; 
+            .profile-header, .datos{
                 flex: 0 0 calc(50% - 10px);
 
             }
         }
     } 
-} */
+} 
