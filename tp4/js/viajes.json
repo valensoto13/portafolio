@@ -20,17 +20,8 @@
         "dificultad": 8,
         "descripcion": "Recorre el famoso Camino Inca hasta llegar a la ciudadela de Machu Picchu",
         "precio":"15000"
-        },
-      "alojamientos":
-      {
-        "id": 1,
-        "nombre": "Hotel Sumaq Machu Picchu",
-        "lugar": "Machu Picchu, Perú",
-        "ranking": 4.8,
-        "precio": 300,
-        "distancia": "2 km",
-        "imagen": "https://www.sumaqhotelperu.com/wp-content/uploads/2019/09/sumaq-machu-picchu-hotel.jpg"
-      }
+        }
+      
       
     },
     {
@@ -54,18 +45,7 @@
           "dificultad": 6,
           "descripcion": "Explora la vida marina de la Gran Barrera de Coral en un viaje de buceo",
           "precio":"20000"
-        },
-        "alojamientos":
-        {
-          "id": 2,
-          "nombre": "Coral Sea Resort Hotel",
-          "lugar": "Gran Barrera de Coral, Australia",
-          "ranking": 4.7,
-          "precio": 250,
-          "distancia": "1 km",
-          "imagen": "https://www.coral-sea-resort-hotel.com/wp-content/uploads/2021/04/coral-sea-resort.jpg"
-      }
-      
+        }
     },
     {
       "id": "3",
@@ -88,17 +68,8 @@
           "dificultad": 4,
           "descripcion": "Descubre los tesoros artísticos y históricos de la Ciudad del Vaticano en una visita guiada",
           "precio":"10000"
-        },
-        "alojamientos":
-        {
-          "id": 3,
-          "nombre": "Hotel Atlante Star",
-          "lugar": "Ciudad del Vaticano, Italia",
-          "ranking": 4.5,
-          "precio": 220,
-          "distancia": "0.5 km",
-          "imagen": "https://media-cdn.tripadvisor.com/media/photo-s/05/2c/1e/d0/hotel-atlante-star.jpg"
         }
+        
     },
     {
       "id": "4",
@@ -121,17 +92,8 @@
           "dificultad": 9,
           "descripcion": "Recorre los senderos del Monte Fitz Roy y disfruta de la belleza natural de Patagonia",
           "precio":"15000"
-        },
-        "alojamientos":
-        {
-          "id": 4,
-          "nombre": "Hostería El Pilar",
-          "lugar": "Monte Fitz Roy, Argentina",
-          "ranking": 4.6,
-          "precio": 150,
-          "distancia": "10 km",
-          "imagen": "https://www.interpatagonia.com/fitzroy/hosterialpillarreja.jpg"
-      }
+        }
+        
       
     },
     {
@@ -155,17 +117,8 @@
           "dificultad": 5,
           "descripcion": "Descubre los secretos de las Pirámides de Giza en una visita guiada",
           "precio":"25000"
-        },
-        "alojamientos":
-        {
-          "id": 5,
-          "nombre": "Mena House",
-          "lugar": "Pirámides de Giza, Egipto",
-          "ranking": 4.7,
-          "precio": 200,
-          "distancia": "1.5 km",
-          "imagen": "https://www.menahousehotel.com/images/mena-house-hotel.jpg"
-        } 
+        }
+        
       
     },
     {
@@ -189,16 +142,6 @@
           "dificultad": 3,
           "descripcion": "Disfruta de la belleza tropical de la Isla de Bora Bora y relájate en sus playas de ensueño",
           "precio":"1.000.000"
-        },
-        "alojamientos":
-        {
-          "id": 6,
-          "nombre": "Four Seasons Resort Bora Bora",
-          "lugar": "Isla de Bora Bora, Polinesia Francesa",
-          "ranking": 4.9,
-          "precio": 1200,
-          "distancia": "0.8 km",
-          "imagen": "https://www.fourseasons.com/content/dam/fourseasons/images/web/BOR/BOR_045_1280x486.jpg"
         }
       
     },
@@ -223,17 +166,8 @@
         "dificultad": 2,
         "descripcion": "Una excursión al Cristo Redentor, una de las Nuevas Siete Maravillas del Mundo, con vistas panorámicas impresionantes de Río de Janeiro.",
         "precio": "50"
-      },
-      "alojamientos":
-      {
-        "id": 7,
-        "nombre": "Copacabana Palace",
-        "lugar": "Río de Janeiro, Brasil",
-        "ranking": 4.9,
-        "precio": 350,
-        "distancia": "5 km",
-        "imagen": "https://www.belmond.com/getmedia/36d1f6d0-76c1-4c72-94c7-ecae28fb29e1/belmond-copacabana-palace-Exterior.jpg"
-    }
+      }
+      
       
     }
 ]
