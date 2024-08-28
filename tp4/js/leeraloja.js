@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (item) {
                     document.querySelector('.alojamiento').innerHTML = `
                         <div class="imagen">
-                            <img src="${item.imagen}" alt="">
+                            <img src="${item.alojamiento.imagen}" alt="">
                         </div>
-                        <h3 id="${item.id}">${item.lugar}</h3>
+                        <h3 id="${item.alojamiento.id}">${item.alojamiento.lugar}</h3>
                         <h4>Overview</h4>
                         <br><br><br>
                         <div class="icons_resto">
@@ -19,16 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="icon">
                                     <div class="lado">
                                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <h2>${item.ranking}</h2>
+                                        <h2>${item.alojamiento.ranking}</h2>
                                     </div>
                                     <h5>Rating</h5>
-                                </div>
-                                <div class="icon">
-                                    <div class="lado">
-                                        <i class="fa-solid fa-cloud" style="color: #74C0FC;"></i>
-                                        <h2>${item.grados}°C</h2>
-                                    </div>
-                                    <h5>Temperature</h5>
                                 </div>
                                 <div class="icon">
                                     <div class="lado">
@@ -40,12 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             </div>
                         </div>
                         <div class="descri">
-                            <p>${item.descripcion}</p>
+                            <p>${item.alojamiento.descripcion}</p>
                         </div>
                         <div class="final">
                         <br>
                             <p>Total price: </p>
-                            <h1>$${item.precio}</h1>
+                            <h1>$${item.alojamiento.precio}</h1>
                         </div>
                     `;
                 } else {
