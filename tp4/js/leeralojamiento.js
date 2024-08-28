@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('js/alojamiento.json')
         .then(response => response.json())
         .then(data => {
-            const container = document.getElementById('options');
+            const container = document.getElementById('alo');
             container.innerHTML = ''; // Limpia el contenedor antes de agregar los datos
 
             data.forEach(e => {
