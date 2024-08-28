@@ -272,7 +272,12 @@ main .cate{
                     font-size: 30px;
                     padding: 5px;
                     margin-left: 43%;
-                    margin-top: -300px
+                    margin-top: -300px;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
 
                 h4{
@@ -337,18 +342,15 @@ main .cate{
                         margin-left: 45%;
                     }
 
-                    .btn{
+                    /* .btn{
                         border-radius: 14px;
                         font-size: 25px;
                         width: 20%;
                         height: 40px;
                         margin-left: 75%;
 
-                        a{
-                            text-decoration: none;
-                            color: black;
-                        }
-                    }
+
+                    } */
                 
 
                 /* p{
