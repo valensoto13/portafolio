@@ -343,6 +343,11 @@ main .cate{
                         width: 20%;
                         height: 40px;
                         margin-left: 75%;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
                     }
                 
 
