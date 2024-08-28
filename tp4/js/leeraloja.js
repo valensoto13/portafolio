@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (item) {
                     document.querySelector('.alojamiento').innerHTML = `
                         <div class="imagen">
-                            <img src="${item.alojamiento.imagen}" alt="">
+                            <img src="${item.imagen}" alt="">
                         </div>
-                        <h3 id="${item.alojamientos.id}">${item.alojamientos.lugar}</h3>
+                        <h3 id="${item.id}">${item.lugar}</h3>
                         <h4>Overview</h4>
                         <br><br><br>
                         <div class="icons_resto">
@@ -19,26 +19,26 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="icon">
                                     <div class="lado">
                                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                                        <h2>${item.alojamientos.ranking}</h2>
+                                        <h2>${item.ranking}</h2>
                                     </div>
                                     <h5>Rating</h5>
                                 </div>
                                 <div class="icon">
                                     <div class="lado">
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <h2 class="distancia">${alojamientos.distancia}</h2>
+                                        <h2 class="distancia">${item.distancia}</h2>
                                     </div>
                                     <h5>Distancia</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="descri">
-                            <p>${item.alojamientos.descripcion}</p>
+                            <p>${item.descripcion}</p>
                         </div>
                         <div class="final">
                         <br>
                             <p>Total price: </p>
-                            <h1>$${item.alojamientos.precio}</h1>
+                            <h1>$${item.precio}</h1>
                         </div>
                     `;
                 } else {
