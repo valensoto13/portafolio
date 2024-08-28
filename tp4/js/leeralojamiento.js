@@ -107,7 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="precio">$${e.alojamientos.precio}</div>
-                <button class="btn">Ver</button>
                 `;
                 
                 container.appendChild(article);
