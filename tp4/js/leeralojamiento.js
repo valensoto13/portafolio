@@ -86,27 +86,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 article.innerHTML = `
                    <div class="imagen-resto">
-                    <img src="${e.imagen}" alt="${e.nombre}">
+                    <img src="${e.alojamientos.imagen}" alt="${e.alojamientos.nombre}">
                 </div>
-                <h3><a href="lugares.html" data-id="${e.id}">${e.nombre}</a></h3>
-                <h4>${e.lugar}</h4>
+                <h3><a href="lugares.html" data-id="${e.alojamientos.id}">${e.alojamientos.nombre}</a></h3>
+                <h4>${e.alojamientos.lugar}</h4>
                 <div class="iconos">
                     <div class="icon">
                         <div class="lado">
                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                            <h2 class="ranking">${e.ranking}</h2>
+                            <h2 class="ranking">${e.alojamientos.ranking}</h2>
                         </div>
                         <h5>Ranking</h5>
                     </div>
                     <div class="icon">
                         <div class="lado">
                             <i class="fa-solid fa-location-dot"></i>
-                            <h2 class="distancia">${e.distancia}</h2>
+                            <h2 class="distancia">${e.alojamientos.distancia}</h2>
                         </div>
                         <h5>Distancia</h5>
                     </div>
                 </div>
-                <div class="precio">$${e.precio}</div>
+                <div class="precio">$${e.alojamientos.precio}</div>
                 <button class="btn">Ver</button>
                 `;
                 
