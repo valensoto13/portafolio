@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="precio">$${alojamiento.precio}</div>
-                <button class="btn">Ver</button>`;
+                <button class="btn" href="aloja.html">Ver</button>`;
             
             container.appendChild(article);
         });
