@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="imagen">
                             <img src="${item.imagen}" alt="">
                         </div>
-                        <h3 id="${item.id}">${item.lugar}</h3>
+                        <h3 id="${item.id}">${item.nombre}</h3>
                         <h4>Overview</h4>
                         <br><br><br>
                         <div class="icons_resto">
